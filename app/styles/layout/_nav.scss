@@ -1,0 +1,35 @@
+nav {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px
+}
+
+nav ul {
+  display: inline;
+  padding: 15px 15px;
+
+  &:last-child {
+    margin-left: auto;
+  }
+}
+
+.nav-sub {
+  cursor: pointer;
+}
+
+.nav-sub p {
+  display: inline-block;
+  padding: 0 16%;
+  text-align: center;
+}
+
+.left li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.right li {
+  text-align: right;
+}
