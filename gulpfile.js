@@ -97,7 +97,7 @@ gulp.task('extras', () => {
 });
 
 // Start server with app files
-gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
+gulp.task('serve', () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -132,7 +132,7 @@ gulp.task('serve:dist', () => {
 });
 
 // Delete dist and .tmp folders
-gulp.task('clean', del.bind(null, ['.tmp', 'dist', 'app/scripts/main.js', 'app/scripts/main.min.js']));
+gulp.task('clean', del.bind(null, ['.tmp', 'dist/fonts', 'dist/images', 'dist/scripts', 'dist/styles', 'index.html', 'app/scripts/main.js', 'app/scripts/main.min.js']));
 
 // Create dist .tmp files/folders
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {

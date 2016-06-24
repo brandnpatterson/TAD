@@ -1,31 +1,21 @@
-html * {
-  color: black;
-  list-style: none;
-  text-decoration: none;
+body {
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @font-face {
-    font-family: 'palitoonregular';
-    src: url('../../fonts/palitoon-webfont.eot');
-    src: url('../../fonts/palitoon-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/palitoon-webfont.woff2') format('woff2'),
-         url('../../fonts/palitoon-webfont.woff') format('woff'),
-         url('../../fonts/palitoon-webfont.ttf') format('truetype'),
-         url('../../fonts/palitoon-webfont.svg#palitoonregular') format('svg');
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-h1, p {
-  font-family: 'palitoonregular', sans-serif;
-  font-size: 30px;
-  font-weight: normal;
-}
-
-h1 {
-  letter-spacing: .5px;
-}
-
-img {
-  max-width: 100%;
+a {
+  cursor: pointer;
 }
