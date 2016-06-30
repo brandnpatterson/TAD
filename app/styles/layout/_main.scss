@@ -1,5 +1,6 @@
 .buffer {
   display: none;
+  max-width: 95%;
 }
 
 .panel {
@@ -46,7 +47,7 @@
 
 //    secondary    //
 #secondary {
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 #secondary.row {
@@ -79,5 +80,5 @@
 
 //    more     //
 #more {
-  margin-top: 100px;
+  margin-top: 20px;
 }
