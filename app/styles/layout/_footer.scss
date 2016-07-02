@@ -1,6 +1,9 @@
 //    footer    //
 #footer {
+  margin: 0 auto;
   padding: 100px 0;
+  text-align: center;
+  width: 65%;
 }
 
 #footer.row {
@@ -21,12 +24,11 @@
 .footer-text {
   color: #777;
   font-size: 16px;
-  text-align: center;
+  margin-right: 70px;
 }
 
 .footer-text_mid {
   color: #777;
   font-size: 16px;
   margin-right: 70px;
-  text-align: center;
 }

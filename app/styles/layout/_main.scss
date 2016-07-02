@@ -119,9 +119,11 @@
   padding: 100px 0;
 }
 
-#about p, #contact {
-  font-size: 20px;
+#about p {
+  font-size: 15px;
+  text-align: justify;
 }
+
 .indent {
   text-indent: 70px;
 }
@@ -144,14 +146,26 @@
 .about-quote_two {
   background-color: #eee;
   float: right;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 30px 30px 30px 0;
   text-align: right;
   width: 500px;
+}
+
+//    contact    //
+#contact p {
+  font-size: 20px;
 }
 
 .contact-heading {
   background-color: #eee;
   margin: 0;
   padding: 20px;
+}
+
+
+//    gallery    //
+.gallery-heading {
+  margin-top: 50px;
+  text-align: center;
 }
