@@ -4,9 +4,6 @@
 
 * Add Modal:
 
-  Gardening
-  Mechanic
-  Sport Gear
   Hygiene
   Components
   N-Abler
