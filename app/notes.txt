@@ -1,9 +1,12 @@
-* Home page - looks plain, Add Logo *
+* Home Page - white looks plain
 
-Add Modal:
-Gardening
-Mechanic
-Sport Gear
-Hygiene
-Components
-N-Abler
+* Home Page - Add Logo
+
+* Add Modal:
+
+  Gardening
+  Mechanic
+  Sport Gear
+  Hygiene
+  Components
+  N-Abler
