@@ -4,12 +4,14 @@
 }
 
 .panel {
+  background-color: #F8F8FF;
   border: none;
   box-shadow: none;
   margin: 100px auto 8%;
   max-width: 90%;
   shadow: none;
 }
+
 
 //    main    //
 #main .panel h3, #more .panel h3 {
@@ -45,6 +47,7 @@
   text-align: center;
 }
 
+
 //    secondary    //
 #secondary {
   padding-top: 20px;
@@ -78,18 +81,24 @@
   text-align: center;
 }
 
+
 //    more     //
 #more {
   margin-top: 20px;
 }
 
 
-//    kitchen    //
+//    gallery    //
 #gallery .panel img {
   box-shadow: 0 0 10px #777;
   box-shadow-left: none;
   margin: 0 0 30px;
   max-width: 100%;
+}
+
+.gallery-heading {
+  margin-top: 50px;
+  text-align: center;
 }
 
 #gallery .panel {
@@ -152,6 +161,7 @@
   width: 500px;
 }
 
+
 //    contact    //
 #contact p {
   font-size: 20px;
@@ -161,11 +171,4 @@
   background-color: #eee;
   margin: 0;
   padding: 20px;
-}
-
-
-//    gallery    //
-.gallery-heading {
-  margin-top: 50px;
-  text-align: center;
 }
