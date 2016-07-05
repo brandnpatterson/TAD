@@ -1,34 +1,12 @@
 //    footer    //
 #footer {
+  display: block;
   margin: 0 auto;
-  padding: 100px 0;
   text-align: center;
-  width: 65%;
+  width: 70%;
 }
 
-#footer.row {
-  text-align: center;
-}
-
-#footerLeft, #footerRight {
-  padding-left: 100px;
-  padding-top: 10px;
-}
-
-#footerMid, #footerRight {
-  border-left: #ddd 1px solid;
-  padding-left: 100px;
-  height: 50px;
-}
-
-.footer-text {
-  color: #777;
-  font-size: 16px;
-  margin-right: 70px;
-}
-
-.footer-text_mid {
-  color: #777;
-  font-size: 16px;
-  margin-right: 70px;
+.footer-buffer {
+  max-width: 100%;
+  padding: 0;
 }
