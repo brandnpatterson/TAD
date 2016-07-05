@@ -16,6 +16,18 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'cinzelregular';
+    src: url('../fonts/Cinzel-Bold-webfont.eot');
+    src: url('../fonts/Cinzel-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Cinzel-Bold-webfont.woff') format('woff'),
+         url('../fonts/Cinzel-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Cinzel-Bold-webfont.svg#cinzelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 a {
   cursor: pointer;
 }
