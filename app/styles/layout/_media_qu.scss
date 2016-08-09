@@ -47,12 +47,20 @@
     order: 1;
   }
 
+  .panel h3 {
+    font-size: 10px;
+  }
+
   #mainLeft .panel, #moreLeft .panel {
     margin-top: 10px;
   }
 
   #mainRight .panel, #moreRight .panel {
     margin-top: 60px;
+  }
+
+  .hidden-break {
+    display: block;
   }
 }
 
