@@ -82,7 +82,7 @@ gulp.task('serve:dist', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'app/styles/*.css', 'dist/styles'], {read: false}))
 
-gulp.task('build', ['html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['html', 'images', 'fonts', 'extras', 'serve'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}))
 })
 
