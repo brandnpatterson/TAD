@@ -35,6 +35,13 @@ gulp.task('images', () => {
     .pipe(gulp.dest('dist/images'));
 })
 
+gulp.task('fonts', () => {
+  return gulp.src(require('main-bower-files')('**/*.{eot,svg,ttf,woff,woff2}', function (err) {})
+    .concat('app/fonts/**/*'))
+    .pipe(gulp.dest('.tmp/fonts'))
+    .pipe(gulp.dest('dist/fonts'))
+})
+
 gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
@@ -60,6 +67,7 @@ gulp.task('serve', () => {
 
   gulp.watch('app/styles/**/*.scss', ['styles'])
   gulp.watch('app/scripts/**/*.js', ['scripts'])
+  gulp.watch('app/fonts/**/*', ['fonts'])
 })
 
 gulp.task('serve:dist', () => {
@@ -74,7 +82,7 @@ gulp.task('serve:dist', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'app/styles/*.css', 'dist/styles'], {read: false}))
 
-gulp.task('build', ['html', 'images', 'extras'], () => {
+gulp.task('build', ['html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}))
 })
 
