@@ -6,7 +6,7 @@
   "main": "gulpfile.js",
   "license": "ISC",
   "url": "https://github.com/brandnpatterson/TAD/issues",
-  "homepage": "https://github.com/brandnpatterson/TAD#readme",
+  "homepage": "https://github.com/brandnpatterson/TAD",
   "private": true,
   "engines": {
     "node": ">=4"
