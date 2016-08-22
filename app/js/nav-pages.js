@@ -9,54 +9,63 @@ $(document).ready(function(){
   $('#nav-carpentry, #footer-carpentry').click(function carpentry(){
     $('#carpentry').siblings().hide();
     $('#carpentry').show();
+    $('.navbar-toggle').click();
     window.scrollTo(0, 0);
   });
 
   $('#nav-components, #footer-components').click(function(){
     $('#components').siblings().hide();
     $('#components').show();
+    $('.navbar-toggle').click();
     window.scrollTo(0, 0);
   });
 
   $('#nav-contact').click(function(){
     $('#contact').siblings().hide();
     $('#contact').show();
+    $('.navbar-toggle').click();
     window.scrollTo(0, 0);
   });
 
   $('#nav-cutlery, #footer-cutlery').click(function(){
     $('#cutlery').siblings().hide();
     $('#cutlery').show();
+    $('.navbar-toggle').click();
     window.scrollTo(0, 0);
   });
 
   $('#nav-gardening, #footer-gardening').click(function(){
     $('#gardening').siblings().hide();
     $('#gardening').show();
+    $('.navbar-toggle').click();
     window.scrollTo(0, 0);
   });
 
   $('#nav-home').click(function(){
     $('#home').siblings().hide();
     $('#home').show();
+    $('.navbar-toggle').click();
     window.scrollTo(0, 0);
   });
 
   $('#nav-hygiene, #footer-hygiene').click(function(){
     $('#hygiene').siblings().hide();
     $('#hygiene').show();
+    $('.navbar-toggle').click();
     window.scrollTo(0, 0);
   });
 
   $('#nav-mechanic, #footer-mechanic').click(function(){
     $('#mechanic').siblings().hide();
     $('#mechanic').show();
+    $('.navbar-toggle').click();
     window.scrollTo(0, 0);
   });
 
   $('#nav-n-abler, #footer-n-abler, #footer-n-abler_V').click(function(){
     $('#n-abler').siblings().hide();
     $('#n-abler').show();
+    $('.navbar-toggle').click();
     window.scrollTo(0, 0);
   });
 
@@ -69,6 +78,7 @@ $(document).ready(function(){
   $('#nav-utencils, #footer-utencils').click(function(){
     $('#utencils').siblings().hide();
     $('#utencils').show();
+    $('.navbar-toggle').click();
     window.scrollTo(0, 0);
   });
 
