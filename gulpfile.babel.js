@@ -1,26 +1,24 @@
-import babel from 'gulp-babel'
-import browserSync from 'browser-sync'
-import concat from 'gulp-concat'
-import del from 'del'
-import gulp from 'gulp'
-import load from 'gulp-load-plugins'
-import sass from 'gulp-sass'
+import    concat from "gulp-concat"
+import       del from "del"
+import      gulp from "gulp"
+import      load from "gulp-load-plugins"
+import    prefix from "gulp-autoprefixer"
+import      sass from "gulp-sass"
+import      sync from "browser-sync"
 
 const $ = load()
-const reload = browserSync.reload
+const reload = sync.reload
 
-gulp.task('styles', () => {
-  gulp.src('app/styles/**/*.scss')
-  .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-  .pipe(gulp.dest('app/styles'))
-  .pipe(gulp.dest('dist/styles'))
+gulp.task('clean', del.bind(null, ['app/styles/*.css', 'dist'], {read: false}))
+
+gulp.task('fonts', () => {
+    gulp.src(['app/fonts/**.eot', 'app/fonts/**.svg','app/fonts/**.ttf', 'app/fonts/**.woff'])
+    .pipe(gulp.dest('dist/fonts'))
 })
 
 gulp.task('html', ['styles'], () => {
   return gulp.src('app/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
-    .pipe($.if('*.js', $.uglify()))
-    .pipe($.if('*.css', $.cssnano({safe: true, autoprefixer: false})))
     .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
     .pipe(gulp.dest('dist'))
 })
@@ -35,57 +33,42 @@ gulp.task('images', () => {
     .pipe(gulp.dest('dist/images'));
 })
 
-gulp.task('fonts', () => {
-  return gulp.src(require('main-bower-files')('**/*.{eot,svg,ttf,woff,woff2}', function (err) {})
-    .concat('app/fonts/**/*'))
-    .pipe(gulp.dest('.tmp/fonts'))
-    .pipe(gulp.dest('dist/fonts'))
-})
-
-gulp.task('extras', () => {
-  return gulp.src([
-    'app/*.*',
-    '!app/*.html'
-  ], {
-    dot: true
-  }).pipe(gulp.dest('dist'))
-})
-
 gulp.task('serve', () => {
-  browserSync({
+  sync({
     notify: false,
-    port: 9000,
     server: {
-      baseDir: ['.tmp', 'app']
+      baseDir: 'app'
     }
   })
 
-  gulp.watch([
-    'app/*.html',
-    'app/styles/**/*.scss'
-  ]).on('change', reload);
-
-  gulp.watch('app/styles/**/*.scss', ['styles'])
-  gulp.watch('app/scripts/**/*.js', ['scripts'])
-  gulp.watch('app/fonts/**/*', ['fonts'])
+  gulp.watch(['app/*.html', 'app/styles/**/*.sass', 'app/styles/*.scss']).on('change', reload)
+  gulp.watch('app/styles/**/*.sass', ['styles'])
+  gulp.watch('app/styles/*.scss', ['styles'])
 })
 
 gulp.task('serve:dist', () => {
-  browserSync({
+  sync({
     notify: false,
     port: 9000,
     server: {
-      baseDir: ['dist']
+      baseDir: 'dist'
     }
   })
 })
 
-gulp.task('clean', del.bind(null, ['.tmp', 'app/styles/*.css', 'dist/styles'], {read: false}))
+gulp.task('styles', () => {
+  gulp.src(['app/styles/**/*.sass', 'app/styles/**/*.scss'])
+  .pipe(sass())
+  .pipe(prefix('last 2 versions'))
+  .pipe(gulp.dest('app/styles'))
+})
 
-gulp.task('build', ['html', 'images', 'fonts', 'extras', 'serve'], () => {
-  return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}))
+gulp.task('build', ['html', 'fonts', 'images'])
+
+gulp.task('dist', ['clean'], () => {
+  gulp.start('build', 'serve:dist')
 })
 
 gulp.task('default', ['clean'], () => {
-  gulp.start('build')
+  gulp.start('build', 'serve')
 })

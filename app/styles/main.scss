@@ -1,9 +1,11 @@
 @import "0-tools/_normalize";
 
-@import "1-basics/basics";
+@import "1-basics/_vars";
+@import "1-basics/_basics";
 
-@import "3-layouts/_nav";
-@import "3-layouts/_sections";
+@import "2-modules/_nav";
+@import "2-modules/_sections";
+@import "2-modules/_footer";
+
 @import "3-layouts/_modal";
-@import "3-layouts/_footer";
 @import "3-layouts/_media";
