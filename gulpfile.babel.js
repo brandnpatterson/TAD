@@ -9,7 +9,7 @@ import      sync from "browser-sync"
 const $ = load()
 const reload = sync.reload
 
-gulp.task('clean', del.bind(null, ['app/styles/*.css', 'dist'], {read: false}))
+gulp.task('clean', del.bind(null, ['app/styles/*.css', 'dist/*.html', 'dist/fonts', 'dist/images', 'dist/styles'], {read: false}))
 
 gulp.task('fonts', () => {
     gulp.src(['app/fonts/**.eot', 'app/fonts/**.svg','app/fonts/**.ttf', 'app/fonts/**.woff'])
@@ -41,7 +41,7 @@ gulp.task('serve', () => {
     }
   })
 
-  gulp.watch(['app/*.html', 'app/styles/**/*.sass', 'app/styles/*.scss']).on('change', reload)
+  gulp.watch(['app/html/*.html', 'app/styles/**/*.sass', 'app/styles/*.scss']).on('change', reload)
   gulp.watch('app/styles/**/*.sass', ['styles'])
   gulp.watch('app/styles/*.scss', ['styles'])
 })
@@ -58,15 +58,16 @@ gulp.task('serve:dist', () => {
 
 gulp.task('styles', () => {
   gulp.src(['app/styles/**/*.sass', 'app/styles/**/*.scss'])
-  .pipe(sass())
+  .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
   .pipe(prefix('last 2 versions'))
   .pipe(gulp.dest('app/styles'))
+  .pipe(gulp.dest('dist/styles'))
 })
 
-gulp.task('build', ['html', 'fonts', 'images'])
+gulp.task('build', ['styles', 'html', 'fonts', 'images'])
 
-gulp.task('dist', ['clean'], () => {
-  gulp.start('build', 'serve:dist')
+gulp.task('dist', ['clean', 'build'], () => {
+  gulp.start('serve:dist')
 })
 
 gulp.task('default', ['clean'], () => {
