@@ -60,7 +60,7 @@ gulp.task('serve:dist', () => {
   sync({
     notify: false,
     server: {
-      baseDir: 'app'
+      baseDir: 'dist'
     }
   })
 })
