@@ -1,24 +1,34 @@
+import      gulp from "gulp"
 import    concat from "gulp-concat"
 import       del from "del"
-import      gulp from "gulp"
 import      load from "gulp-load-plugins"
 import    prefix from "gulp-autoprefixer"
+import    rename from "gulp-rename"
 import      sass from "gulp-sass"
 import      sync from "browser-sync"
 
 const $ = load()
 const reload = sync.reload
 
-gulp.task('clean', del.bind(null, ['app/styles/*.css', 'dist/*.html', 'dist/fonts', 'dist/images', 'dist/styles'], {read: false}))
+gulp.task('clean', del.bind(null, ['app/styles/*.css', 'app/js/main.min.js', 'app/js/**.min.js', 'dist'], {read: false}))
+
+gulp.task('default', ['html', 'dep', 'fonts', 'images'], () => {
+  gulp.start('serve')
+})
+
+gulp.task('dep', () => {
+  return gulp.src(['app/dep/**.*'])
+  .pipe(gulp.dest('dist/dep'))
+})
 
 gulp.task('fonts', () => {
     gulp.src(['app/fonts/**.eot', 'app/fonts/**.svg','app/fonts/**.ttf', 'app/fonts/**.woff'])
     .pipe(gulp.dest('dist/fonts'))
 })
 
-gulp.task('html', ['styles'], () => {
+gulp.task('html', ['scripts', 'styles'], () => {
   return gulp.src('app/*.html')
-    .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
+    .pipe($.useref({searchPath: ['app']}))
     .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
     .pipe(gulp.dest('dist'))
 })
@@ -30,7 +40,7 @@ gulp.task('images', () => {
       interlaced: true,
       svgoPlugins: [{cleanupIDs: false}]
     })))
-    .pipe(gulp.dest('dist/images'));
+    .pipe(gulp.dest('dist/images'))
 })
 
 gulp.task('serve', () => {
@@ -41,35 +51,35 @@ gulp.task('serve', () => {
     }
   })
 
-  gulp.watch(['app/html/*.html', 'app/styles/**/*.sass', 'app/styles/*.scss']).on('change', reload)
+  gulp.watch(['app/*.html', 'app/styles/**/*.sass', 'app/js/*.min.js']).on('change', reload)
   gulp.watch('app/styles/**/*.sass', ['styles'])
-  gulp.watch('app/styles/*.scss', ['styles'])
+  gulp.watch('app/js/*.js', ['scripts'])
 })
 
 gulp.task('serve:dist', () => {
   sync({
     notify: false,
-    port: 9000,
     server: {
-      baseDir: 'dist'
+      baseDir: 'app'
     }
   })
 })
 
+gulp.task('scripts', () => {
+  return gulp.src('app/js/*.js')
+    .pipe(concat('main.js'))
+    .pipe($.uglify())
+    .pipe($.rename({suffix: '.min'}))
+    .pipe(gulp.dest('app/js'))
+    .pipe(gulp.dest('dist/js'))
+})
+
 gulp.task('styles', () => {
-  gulp.src(['app/styles/**/*.sass', 'app/styles/**/*.scss'])
+  gulp.src('app/styles/style.scss')
   .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+  .pipe(rename({suffix: '.min'}))
   .pipe(prefix('last 2 versions'))
   .pipe(gulp.dest('app/styles'))
   .pipe(gulp.dest('dist/styles'))
-})
-
-gulp.task('build', ['styles', 'html', 'fonts', 'images'])
-
-gulp.task('dist', ['clean', 'build'], () => {
-  gulp.start('serve:dist')
-})
-
-gulp.task('default', ['clean'], () => {
-  gulp.start('build', 'serve')
+  .pipe(reload({stream: true}))
 })
