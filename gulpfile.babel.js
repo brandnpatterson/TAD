@@ -48,7 +48,7 @@ gulp.task('images', () => {
 })
 
 gulp.task('lint', () => {
-  return gulp.src(['*/**/*.js', '!node_modules/**', '!test/**', '!*/js/jquery/*', '!*/js/bootstrap/*'])
+  return gulp.src(['*/**/*.js', '!node_modules/**', '!test/**', '!*/js/jquery/*', '!*/js/bootstrap/*', '!**/*.min.js'])
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError())
@@ -58,7 +58,7 @@ gulp.task('serve', () => {
   sync({
     notify: false,
     server: {
-      baseDir: 'app'
+      baseDir: 'dist'
     }
   })
 
@@ -68,21 +68,11 @@ gulp.task('serve', () => {
   gulp.watch('app/js/*.js', ['scripts'])
 })
 
-gulp.task('serve:dist', () => {
-  sync({
-    notify: false,
-    server: {
-      baseDir: 'dist'
-    }
-  })
-})
-
 gulp.task('scripts', () => {
   return gulp.src('app/js/*.js')
     .pipe(concat('main.js'))
     .pipe($.uglify())
     .pipe($.rename({suffix: '.min'}))
-    .pipe(gulp.dest('app/js'))
     .pipe(gulp.dest('dist/js'))
 })
 
@@ -91,7 +81,6 @@ gulp.task('styles', () => {
   .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
   .pipe(rename({suffix: '.min'}))
   .pipe(prefix('last 2 versions'))
-  .pipe(gulp.dest('app/css'))
   .pipe(gulp.dest('dist/css'))
   .pipe(reload({stream: true}))
 })
