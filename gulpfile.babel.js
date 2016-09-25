@@ -15,7 +15,7 @@ const reload = sync.reload
 
 gulp.task('build', ['html', 'fonts', 'images'])
 
-gulp.task('clean', del.bind(null, ['app/css/*.css', 'app/js/**.min.js', 'dist/css/style.min.css', 'dist/fonts', 'dist/images', 'dist/index.html', 'dist/js/main.min.js', '!**/bootstrap.min.css'], {read: false}))
+gulp.task('clean', del.bind(null, ['app/css/*.css', 'app/js/**.min.js', 'dist/css/style.min.css', 'dist/fonts', 'dist/images', 'index.html', 'dist/js/main.min.js', '!**/bootstrap.min.css'], {read: false}))
 
 gulp.task('default', ['html', 'lint', 'fonts', 'images'], () => {
   gulp.start('serve')
@@ -34,7 +34,7 @@ gulp.task('html', ['scripts', 'styles'], () => {
   return gulp.src('app/*.html')
     .pipe($.useref({searchPath: ['app']}))
     .pipe($.htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('./'))
 })
 
 gulp.task('images', () => {
@@ -58,7 +58,7 @@ gulp.task('serve', () => {
   sync({
     notify: false,
     server: {
-      baseDir: 'app'
+      baseDir: './'
     }
   })
 
@@ -66,15 +66,6 @@ gulp.task('serve', () => {
   gulp.watch('app/css/**/*.sass', ['styles'])
   gulp.watch('app/css/**/*.scss', ['styles'])
   gulp.watch('app/js/*.js', ['scripts'])
-})
-
-gulp.task('serve:dist', () => {
-  sync({
-    notify: false,
-    server: {
-      baseDir: 'dist'
-    }
-  })
 })
 
 gulp.task('scripts', () => {
