@@ -13,7 +13,7 @@ import      sync from "browser-sync"
 const $ = load()
 const reload = sync.reload
 
-gulp.task('build', ['html', 'fonts', 'images'])
+gulp.task('build', ['html', 'lint', 'fonts', 'images'])
 
 gulp.task('clean', del.bind(null, ['app/css/*.css', 'app/js/**.min.js', 'dist/css/style.min.css', 'dist/fonts', 'dist/images', 'index.html', 'dist/js/main.min.js', '!**/bootstrap.min.css'], {read: false}))
 
