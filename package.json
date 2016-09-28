@@ -1,16 +1,12 @@
 {
   "name": "tad",
   "author": "Brandon Patterson",
-  "description": "Texas Assistive Devices - Website for an Orthopedic Care Company",
+  "description": "Texas Assistive Devices - Website for an orthopedic care company",
   "version": "1.0.0",
-  "main": "gulpfile.js",
+  "main": "index.html",
   "license": "ISC",
-  "url": "",
-  "homepage": "https://github.com/brandnpatterson/tad",
-  "private": true,
-  "engines": {
-    "node": ">=4"
-  },
+  "url": "https://brandnpatterson.com/tad",
+  "homepage": "https://brandnpatterson.com/tad",
   "dependencies": {
     "jquery": "^1.8.2"
   },
@@ -39,24 +35,8 @@
     "gulp-useref": "^3.0.0",
     "gulp-watch": "^4.3.8"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brandnpatterson/TAD.git"
-  },
-  "eslintConfig": {
-    "env": {
-      "es6": true,
-      "node": true,
-      "browser": true
-    }
-  },
-  "rules": {
-    "quotes": [
-      2,
-      "single"
-    ]
+    "url": "git+https://github.com/brandnpatterson/tad.git"
   }
 }
