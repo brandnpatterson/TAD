@@ -59,12 +59,6 @@ gulp.task('serve', () => {
   })
 })
 
-gulp.task('watch', () => {
-  gulp.watch('app/*.html', ['html', reload])
-  gulp.watch('app/css/**/*.scss', ['styles', reload])
-  gulp.watch('app/js/*.js', ['scripts', reload])
-})
-
 gulp.task('scripts', () => {
   return gulp.src('app/js/*.js')
     .pipe(concat('main.js'))
@@ -80,4 +74,10 @@ gulp.task('styles', () => {
   .pipe(prefix('last 2 versions'))
   .pipe(gulp.dest('dist/css'))
   .pipe(reload({stream: true}))
+})
+
+gulp.task('watch', () => {
+  gulp.watch('app/*.html', ['html', reload])
+  gulp.watch('app/css/**/*.scss', ['styles', reload])
+  gulp.watch('app/js/*.js', ['scripts', reload])
 })
