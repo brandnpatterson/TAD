@@ -1,5 +1,5 @@
 doctype html
-html
+html(lang="en-US")
   head
   meta(charset='utf-8')
   meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
@@ -8,7 +8,7 @@ html
   link(href='dist/css/style.min.css', rel='stylesheet')
   link(href='dist/images/favicon.ico', rel='icon', type='image/x-icon')
   title Texas Assistive Devices
-body
+  body
   #navbar-container.container
     .navbar.navbar-top
       a(href='#')
@@ -21,7 +21,7 @@ body
       .container-fluid
         .navbar-header
           button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar')
-            span.sr.only Toggle navigation
+            span.sr.only
             span.icon-bar
             span.icon-bar
             span.icon-bar
@@ -88,8 +88,10 @@ body
       p.indent Texas Assistive Devices has a reputation of listening very carefully to patient needs, and to practitioner and therapist suggestions. Their feedback led to the development of the N-Abler line of products. The Hayden-Preston System now offers three major products: the N - Abler I (our original terminal device), N-Abler II (our new terminal device design), and the N-Abler III. The N-Abler III was developed to assist non-amputees who do have some arm function, but little or no hand function resulting from spinal cord injuries, nerve or muscle damage, birth defects, stroke, etc. Our newest products to be developed are a Three-Zone Hands Free Tool Changing Station and the Quick Disconnect Myo-Electric Wrist Adapter. The Quick Disconnect Myo-Electric Wrist Adapter provides a platform for Myo users to easily switch from the Myo hand to a conventional terminal device such as a hook or the N-Abler II. Our mission is to become the world’s leading provider of devices designed to assist persons with upper extremity amputation and hand dysfunction.
       p Our mission is to become the world’s leading provider of devices designed to assist persons with upper extremity amputation and hand dysfunction.
       h2.about-quote_two "Our mission is to become the world’s leading provider of devices designed to assist persons with upper extremity amputation and hand dysfunction."
-      p Ron Farquharson Manufacturing President Texas Assistive Devices, L.L.C.
-    // end about
+      .author
+        p Ron Farquharson
+        p Manufacturing President
+        p Texas Assistive Devices, L.L.C.
 
     #carpentry
       h2.gallery-heading Carpentry
@@ -417,7 +419,6 @@ body
               img(src='dist/images/059Phillips screw driver set.jpg', alt='phillips screw driver set')
               pPSS04-0N2 Phillips Screwdriver Set
         // end modalPhillips
-    // end carpentry
 
     #components
       h2.gallery-heading Components
@@ -882,7 +883,6 @@ body
               img(src='dist/images/189 Endo Skeletal Adaptor.jpg', alt='Endo Skeletal Adaptor')
               p Endo Skeletal Adaptor
         // end modalEndo2
-    // end components
 
     #contact
       h2.contact-heading Contact Us
@@ -895,3200 +895,1799 @@ body
     #cutlery
       h2.gallery-heading Cutlery
       #gallery.row
-        a(href='#modalChefKnife6', role='button', data-toggle='modal')
-          .col-sm-4
-            .panel
-              img(src='dist/images/040 6 in Chef.jpg', alt='chef knife 6 inch')
-              p
-                | 6CK08-0N2 Chef Knife, 6”
-        // end a col-sm-4
         #modalChefKnife6.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title 6CK08-0N2 Chef Knife, 6”
-
               .modal-body
                 img(src='dist/images/040 6 in Chef.jpg', alt='chef knife 6 inch')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Blade – Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalChefKnife7', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 6” Blade – Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalChefKnife6', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/042 7 in Santoko Granton Chef.jpg', alt='chef knife 7 inch')
-              p
-                | 7SGECK09-0N2 Chef Knife, 7”
-        // end a col-sm-4
+              img(src='dist/images/040 6 in Chef.jpg', alt='chef knife 6 inch')
+              p 6CK08-0N2 Chef Knife, 6”
+        // end modalChefKinfe6
+
         #modalChefKnife7.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title 7SGECK09-0N2 Chef Knife, 7”
-
               .modal-body
                 img(src='dist/images/042 7 in Santoko Granton Chef.jpg', alt='chef knife 7 inch')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  7” Santoko Granton Edge - Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalChefKnife8', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 7” Santoko Granton Edge - Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalChefKnife7', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/021 8 in Chef knife.jpg', alt='chef knife 8 inch')
-              p
-                | 8CK02-0N2 Chef Knife, 8”
-        // end a col-sm-4
+              img(src='dist/images/042 7 in Santoko Granton Chef.jpg', alt='chef knife 7 inch')
+              p 7SGECK09-0N2 Chef Knife, 7”
+        // end modalChefKnife7
+
         #modalChefKnife8.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title 8CK02-0N2 Chef Knife, 8”
-
               .modal-body
                 img(src='dist/images/021 8 in Chef knife.jpg', alt='chef knife 8 inch')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  8” Blade - Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalChefKnife10', role='button', data-toggle='modal')
+                p Manufacturer:Forschner
+                p Material:High Carbon Stainless Steel
+                p No. Pieces:1
+                p Size:8” Blade - Full Tang
+                p Shank:Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site:N-Abler II™
+        a(href='#modalChefKnife8', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/003 10 in Chef.jpg', alt='chef knife 10 inch')
-              p
-                | 10CK03-0N2 Chef Knife, 10”
-        // end a col-sm-4
+              img(src='dist/images/021 8 in Chef knife.jpg', alt='chef knife 8 inch')
+              p 8CK02-0N2 Chef Knife, 8”
+        // end modalChefKnife8
+
         #modalChefKnife10.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title 10CK03-0N2 Chef Knife, 10”
-
               .modal-body
                 img(src='dist/images/003 10 in Chef.jpg', alt='chef knife 10 inch')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  8” Blade - Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modal eadKnife8', role='button', data-toggle='modal')
+                p Manufacturer:Forschner
+                p Material:High Carbon Stainless Steel
+                p No. Pieces:1
+                p Size:8” Blade - Full Tang
+                p Shank:Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site:N-Abler II™
+        a(href='#modalChefKnife10', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/010 8 in  ead knife.jpg', alt=' ead knife')
-              p
-                | 8BK04-0N2  ead Knife, 8”
-        // end a col-sm-4
-        #modal eadKnife8.modal.fade
+              img(src='dist/images/003 10 in Chef.jpg', alt='chef knife 10 inch')
+              p 10CK03-0N2 Chef Knife, 10”
+        // end modalChefKnife10
+
+        #modalBreadKnife8.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title 8BK04-0N2  ead Knife, 8”
-
               .modal-body
-                img(src='dist/images/010 8 in  ead knife.jpg', alt=' ead knife')
+                img(src='dist/images/010 8 in bread knife.jpg', alt=' ead knife')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  8” Blade - Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modal isketSlicer12', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 8” Blade - Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modal eadKnife8', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/012_ isket, 12 inch.jpg', alt=' isket slicer')
-              p
-                | 12BS10-0N2  isket Slicer, 12”
-        // end a col-sm-4
-        #modal isketSlicer12.modal.fade
+              img(src='dist/images/010 8 in  ead knife.jpg', alt=' ead knife')
+              p 8BK04-0N2  Bread Knife, 8”
+        // end modalBreadKnife8
+
+        #modalBrisketSlicer12.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title 12BS10-0N2  isket Slicer, 12”
-
               .modal-body
                 img(src='dist/images/012_ isket, 12 inch.jpg', alt=' isket slicer')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  12” Blade
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalParingKnife', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 12” Blade
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modal isketSlicer12', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/001_3.5paring.jpg', alt='paring knife')
-              p
-                | 3PK06-0N2 Paring Knife, 3 ½” or 4”
-        // end a col-sm-4
+              img(src='dist/images/012_ isket, 12 inch.jpg', alt=' isket slicer')
+              p 12BS10-0N2  Brisket Slicer, 12”
+        // end modalBrisketSlicer12
+
         #modalParingKnife.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title 3PK06-0N2 Paring Knife, 3 ½” or 4”
-
               .modal-body
                 img(src='dist/images/001_3.5paring.jpg', alt='paring knife')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  3 ½” or 4”
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalBoningKnife', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 3 ½” or 4”
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalParingKnife', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/004_6 inch boning.jpg', alt='boning knife')
-              p
-                | 6BK05-0N2 Boning Knife, 3” or 6”
-        // end a col-sm-4
+              img(src='dist/images/001_3.5paring.jpg', alt='paring knife')
+              p 3PK06-0N2 Paring Knife, 3 ½” or 4”
+        // end modalParingKnife
+
         #modalBoningKnife.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title 6BK05-0N2 Boning Knife, 3” or 6”
-
               .modal-body
                 img(src='dist/images/004_6 inch boning.jpg', alt='boning knife')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  3” or 6”
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalFilletKnife', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 3” or 6”
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalBoningKnife', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/033_fillet.jpg', alt='fillet knife')
-              p
-                | Fillet Knife
-        // end a col-sm-4
+              img(src='dist/images/004_6 inch boning.jpg', alt='boning knife')
+              p 6BK05-0N2 Boning Knife, 3” or 6”
+        // end modalBoningKnife
+
         #modalFilletKnife.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Fillet Knife
-
               .modal-body
                 img(src='dist/images/033_fillet.jpg', alt='fillet knife')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  3” or 6”
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalBladeSafe', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 3” or 6”
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalFilletKnife', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/029_Blade Safe.jpg', alt='blade safe')
-              p
-                | BSKP01-0N2 BLADESafe Knife Protector (4 ½ to 10” Blades)
-        // end a col-sm-4
+              img(src='dist/images/033_fillet.jpg', alt='fillet knife')
+              p Fillet Knife
+        // end modalFilletKnife
+
         #modalBladeSafe.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title BSKP01-0N2 BLADESafe Knife Protector (4 ½ to 10” Blades)
-
               .modal-body
                 img(src='dist/images/029_Blade Safe.jpg', alt='blade safe')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Blades from 4 ½ to 6”
-
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalSharpeningSteel', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: Blades from 4 ½ to 6”
+        a(href='#modalBladeSafe', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/027_Shrpening steel.jpg', alt='sharpening steel')
-              p
-                | SS01-0N2 Sharpening Steel
-        // end a col-sm-4
+              img(src='dist/images/029_Blade Safe.jpg', alt='blade safe')
+              p BSKP01-0N2 BLADESafe Knife Protector (4 ½ to 10” Blades)
+        // end modalBladeSafe
+
         #modalSharpeningSteel.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title SS01-0N2 Sharpening Steel
-
               .modal-body
                 img(src='dist/images/027_Shrpening steel.jpg', alt='sharpening steel')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  8” Sharpening Surface
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalHuntingKnife', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 8” Sharpening Surface
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalSharpeningSteel', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/020_Hunting.jpg', alt='hunting knife')
-              p
-                | Hunting Knife
-        // end a col-sm-4
+              img(src='dist/images/027_Shrpening steel.jpg', alt='sharpening steel')
+              p SS01-0N2 Sharpening Steel
+        // end modalSharpeningSteel
+
         #modalHuntingKnife.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Hunting Knife
-
               .modal-body
                 img(src='dist/images/020_Hunting.jpg', alt='hunting knife')
                 h4 Specifications:
+                p Manufacturer: Winchester ®
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 4 ¾” Blade W/Gut Hook
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalHuntingKnife', role='button', data-toggle='modal')
+          .col-sm-4
+            .panel
+              img(src='dist/images/020_Hunting.jpg', alt='hunting knife')
+              p Hunting Knife
+        // end modalHuntingKnife
 
-                p
-                   p Manufacturer:
-                  |  Winchester ®
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  4 ¾” Blade W/Gut Hook
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-      // end gallery
-    // end cutlery
     #gardening
       h2.gallery-heading Gardening
       #gallery.row
-        a(href='#modalPruningSaw', role='button', data-toggle='modal')
-          .col-sm-4
-            .panel
-              img(src='dist/images/093 Pruning Saw.jpg', alt='pruning saw')
-              p
-                | PS03-0N2 Pruning Saw
-        // end a col-sm-4
         #modalPruningSaw.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title PS03-0N2 Pruning Saw
-
               .modal-body
                 img(src='dist/images/093 Pruning Saw.jpg', alt='pruning saw')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  DeWALT ®
-
-                   p Material:
-                  |  High Treated Carbon Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  5” W/6 Teeth Per Inch
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalHandHoe', role='button', data-toggle='modal')
+                p Manufacturer: DeWALT ®
+                p Material: High Treated Carbon Steel
+                p No. Pieces: 1
+                p Size: 5” W/6 Teeth Per Inch
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalPruningSaw', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/097 Hand Hoe.jpg', alt='hand hoe')
-              p
-                | Hand Hoe
-        // end a col-sm-4
+              img(src='dist/images/093 Pruning Saw.jpg', alt='pruning saw')
+              p PS03-0N2 Pruning Saw
+        // end modalPruningSaw
+
         #modalHandHoe.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Hand Hoe
-
               .modal-body
                 img(src='dist/images/097 Hand Hoe.jpg', alt='hand hoe')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  DeWALT ®
-
-                   p Material:
-                  |  High Treated Carbon Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalHandCult', role='button', data-toggle='modal')
+                p Manufacturer: DeWALT ®
+                p Material: High Treated Carbon Steel
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalHandHoe', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/106 Hand Cultivator.jpg', alt='hand cultivator')
-              p
-                | Hand Cultivator
-        // end a col-sm-4
+              img(src='dist/images/097 Hand Hoe.jpg', alt='hand hoe')
+              p Hand Hoe
+        // end modalHandHoe
+
         #modalHandCult.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Hand Cultivator
-
               .modal-body
                 img(src='dist/images/106 Hand Cultivator.jpg', alt='hand cultivator')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  DeWALT ®
-
-                   p Material:
-                  |  High Treated Carbon Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalHandSpade', role='button', data-toggle='modal')
+                p Manufacturer: DeWALT ®
+                p Material: High Treated Carbon Steel
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalHandCult', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/112 Hand Spade.jpg', alt='hand spade')
-              p
-                | Hand Spade
-        // end a col-sm-4
+              img(src='dist/images/106 Hand Cultivator.jpg', alt='hand cultivator')
+              p Hand Cultivator
+        // end modalHandCult
+
         #modalHandSpade.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Hand Spade
-
               .modal-body
                 img(src='dist/images/112 Hand Spade.jpg', alt='hand spade')
                 h4 Specifications:
-
-                p
-                   p Manufacturer:
-                  |  DeWALT ®
-
-                   p Material:
-                  |  High Treated Carbon Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
+                p Manufacturer: DeWALT ®
+                p Material: High Treated Carbon Steel
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
         // end modal
-      // end gallery
-    // end gardening
+
     #home
-      #main.row
-        #mainLeft.col-sm-6
+      .first-panel.row
+        .first-panel-left.col-sm-6
           .panel
             a(href='n-abler.html')
               img(src='dist/images/147 N Abler II.jpg', alt='N-Abler II')
-        // end mainLeft
-        #mainRight.col-sm-6
+        .first-panel-light.col-sm-6
           .panel
             h3 The N-Abler II ™
             p
               | "The N-Abler II ™ is the 'Heart' of the N-Abler ™ Tool and Implement System."
             a.main-link(href='n-abler.html') Learn more »
-        // end mainRight
-      // end main
-      hr.buffer
-      hr.buffer
-      #secondary.row
-        #secondaryLeft.col-sm-4
+      // end first-panel
+
+      .second-panel.row
+        .second-panel-left.col-sm-4
           .secondary-text
-            p
-              | The World Standard
-          // end secondary
-        // end secondaryLeft
-        #secondaryMid.col-sm-4
+            p The World Standard
+        .second-panel-mid.col-sm-4
           .secondary-text_mid
-            p
-              | Ask About our L Codes Recommendations
-          // end secondary-text_mid
-        // end secondaryMid
-        #secondaryRight.col-sm-4
+            p Ask About our L Codes Recommendations
+        .second-panel-right.col-sm-4
           .secondary-text
-            p
-              | Award Winning Design
-          // end secondary-text
-        // end secondaryRight
+            p Award Winning Design
       // end secondary
-      #more.row
-        #moreLeft.col-sm-6
+
+      .third-panel.row
+        .third-panel-left.col-sm-6
           .panel
             h3 The N-Abler V ™ AB
-            p.more-text
-              | "The new N-Abler V wrists provide more flexibility in daily living activities."
+            p.more-text "The new N-Abler V wrists provide more flexibility in daily living activities."
             a(href='n-abler.html') Learn more »
-        // end moreLeft
-        #moreRight.col-sm-6
+        .third-panel-right.col-sm-6
           .panel
             a(href='n-abler.html')
               img(src='dist/images/159 AB Wrist.jpg', alt='N-Abler V AB')
-        // end moreRight
       // end more
-      #main.row
-        #mainLeft.col-sm-6
+
+      .forth-panel.row
+        .forth-panel-left.col-sm-6
           .panel
             a(href='n-abler.html')
               img(src='dist/images/163  A Wrist.jpg', alt='N-Abler V A')
-        // end mainLeft
-        #mainRight.col-sm-6
+        .forth-panel-right.col-sm-6
           .panel
             h3 The N-Abler V ™ A
-            p
-              | "The A model is designed for the individual that requires cable control rotation, flexion/extension."
+            p "The A model is designed for the individual that requires cable control rotation, flexion/extension."
             a.main-link(href='n-abler.html') Learn more »
-        // end panel
-      // end mainRight
-    // end home
+
     #hygiene
       h2.gallery-heading Hygiene
       #gallery.row
-        a(href='#modalRound ush', role='button', data-toggle='modal')
-          .col-sm-4
-            .panel
-              img(src='dist/images/114 Round  ush, std, shank.jpg', alt='Round  ush, std, shank')
-              p
-                | Round  ush, Standard Shank
-        // end a col-sm-4
-        #modalRound ush.modal.fade
+        #modalRoundBrush.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
-                h4.modal-title Round  ush, Standard Shank
-
+                h4.modal-title Round Brush, Standard Shank
               .modal-body
-                img(src='dist/images/114 Round  ush, std, shank.jpg', alt='Round  ush, std, shank')
+                img(src='dist/images/114 Round Brush, std, shank.jpg', alt='Round Brush, std, shank')
                 h4 Specifications:
-                p
-                  //
-                    < p>Manufacturer:</ p> Forschner<  />
-                    < p>Material:</ p> High Carbon Stainless Steel<  />
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalOvalHands', role='button', data-toggle='modal')
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalRoundBrush', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/121 Oval Hands Free  ush.jpg', alt='Oval Hands Free  ush')
-              p
-                | Oval Hands Free  ush
-        // end a col-sm-4
+              img(src='dist/images/114 Round Brush, std, shank.jpg', alt='Round Brush, std, shank')
+              p Round Brush, Standard Shank
+        // end modalRoundBrush
+
         #modalOvalHands.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
-                h4.modal-title Oval Hands Free  ush
-
+                h4.modal-title Oval Hands Free Brush
               .modal-body
-                img(src='dist/images/121 Oval Hands Free  ush.jpg', alt='Oval Hands Free  ush')
+                img(src='dist/images/121 Oval Hands Free Brush.jpg', alt='Oval Hands Free Brush')
                 h4 Specifications:
-                p
-                  //
-                    < p>Manufacturer:</ p> Forschner<  />
-                    < p>Material:</ p> High Carbon Stainless Steel<  />
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalHandsFreeTooth', role='button', data-toggle='modal')
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalOvalHands', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/140 Hands Free Tooth  ush.jpg')
-              p
-                | Hands Free Tooth  ush
-        // end a col-sm-4
+              img(src='dist/images/121 Oval Hands Free Brush.jpg', alt='Oval Hands Free Brush')
+              p Oval Hands Free Brush
+        // end modalOvalHands
+
         #modalHandsFreeTooth.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
-                h4.modal-title Hands Free Tooth  ush
-
+                h4.modal-title Hands Free Tooth Brush
               .modal-body
-                img(src='dist/images/140 Hands Free Tooth  ush.jpg')
+                img(src='dist/images/140 Hands Free Tooth Brush.jpg')
                 h4 Specifications:
-                p
-                  //
-                    < p>Manufacturer:</ p> Forschner<  />
-                    < p>Material:</ p> High Carbon Stainless Steel<  />
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalExtraLongHandle', role='button', data-toggle='modal')
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalHandsFreeTooth', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/130 Extra Long Handle  ush.jpg', alt='Extra Long Handle  ush')
-              p
-                | Extra Long Handle  ush
-        // end a col-sm-4
+              img(src='dist/images/140 Hands Free Tooth Brush.jpg')
+              p Hands Free Tooth Brush
+        // end modalHandsFreeTooth
+
         #modalExtraLongHandle.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
-                h4(clas='modal-title') Extra Long Handle  ush
-
+                h4(clas='modal-title') Extra Long Handle Brush
               .modal-body
-                img(src='dist/images/130 Extra Long Handle  ush.jpg', alt='Extra Long Handle  ush')
+                img(src='dist/images/130 Extra Long Handle Brush.jpg', alt='Extra Long Handle Brush')
                 h4 Specifications:
-                p
-                  //
-                    < p>Manufacturer:</ p> Forschner<  />
-                    < p>Material:</ p> High Carbon Stainless Steel<  />
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        a(href='#modalLockingGrip', role='button', data-toggle='modal')
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalExtraLongHandle', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/037Locking grip C clamp.jpg', alt='locking grip C clamp')
-              p
-                | LGCC01-0N2 Locking Grip C-Clamp
-        // end a col-sm-4
+              img(src='dist/images/130 Extra Long Handle Brush.jpg', alt='Extra Long Handle Brush')
+              p Extra Long Handle Brush
+        // end modalExtraLongHandle
+
         #modalLockingGrip.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title LGCC01-0N2 Locking Grip C-Clamp
-
               .modal-body
                 img(src='dist/images/037Locking grip C clamp.jpg', alt='locking grip C clamp')
                 h4 Specifications:
-                p
-                  //
-                    < p>Manufacturer:</ p> Forschner<  />
-                    < p>Material:</ p> High Carbon Stainless Steel<  />
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalExtraLong', role='button', data-toggle='modal')
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalLockingGrip', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/133 Extra Long Comb.jpg', alt='Extra Long Comb')
-              p
-                | Extra Long Comb
-        // end a col-sm-4
+              img(src='dist/images/037Locking grip C clamp.jpg', alt='locking grip C clamp')
+              p LGCC01-0N2 Locking Grip C-Clamp
+        // end modalLockingGrip
+
         #modalExtraLong.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Extra Long Comb
-
               .modal-body
                 img(src='dist/images/133 Extra Long Comb.jpg', alt='Extra Long Comb')
                 h4 Specifications:
-                p
-                  //
-                    < p>Manufacturer:</ p> Forschner<  />
-                    < p>Material:</ p> High Carbon Stainless Steel<  />
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalHandsFreeRazor', role='button', data-toggle='modal')
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalExtraLong', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/138 Hands Free Razor.jpg', alt='Hands Free Razor')
-              p
-                | Hands Free Razor
-        // end a col-sm-4
+              img(src='dist/images/133 Extra Long Comb.jpg', alt='Extra Long Comb')
+              p Extra Long Comb
+        // end modalExtraLong
+
         #modalHandsFreeRazor.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Hands Free Razor
-
               .modal-body
                 img(src='dist/images/138 Hands Free Razor.jpg', alt='Hands Free Razor')
                 h4 Specifications:
-                p
-                  //
-                    < p>Manufacturer:</ p> Forschner<  />
-                    < p>Material:</ p> High Carbon Stainless Steel<  />
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalHandsFreeStation', role='button', data-toggle='modal')
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalHandsFreeRazor', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/151 Hands Free Station.jpg', alt='Hands Free Station')
-              p
-                | Hands Free Station
-        // end a col-sm-4
+              img(src='dist/images/138 Hands Free Razor.jpg', alt='Hands Free Razor')
+              p Hands Free Razor
+        // end modalHandsFreeRazor
+
         #modalHandsFreeStation.modal.fade
           .modal-dialog
             .modal-content
               div(clas='modal-header')
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Hands Free Station
-
               .modal-body
                 img(src='dist/images/151 Hands Free Station.jpg', alt='Hands Free Station')
                 h4 Specifications:
-                p
-                  //
-                    < p>Manufacturer:</ p> Forschner<  />
-                    < p>Material:</ p> High Carbon Stainless Steel<  />
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalPocketDresser', role='button', data-toggle='modal')
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalHandsFreeStation', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/156 Pocket Dresser.jpg', alt='Pocket Dresser')
-              p
-                | Pocket Dresser
-        // end a col-sm-4
+              img(src='dist/images/151 Hands Free Station.jpg', alt='Hands Free Station')
+              p Hands Free Station
+        // end modalHandsFreeStation
+
         #modalPocketDresser.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Pocket Dresser
-
               .modal-body
                 img(src='dist/images/156 Pocket Dresser.jpg', alt='Pocket Dresser')
                 h4 Specifications:
-                p
-                  //
-                    < p>Manufacturer:</ p> Forschner<  />
-                    < p>Material:</ p> High Carbon Stainless Steel<  />
-                   p No. Pieces:
-                  |  1
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalPocketDresser', role='button', data-toggle='modal')
+          .col-sm-4
+            .panel
+              img(src='dist/images/156 Pocket Dresser.jpg', alt='Pocket Dresser')
+              p Pocket Dresser
+        // end modalPocketDresser
 
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-      // end gallery
-    // end hygiene
     #mechanic
       h2.gallery-heading Mechanic
       #gallery.row
-        a(href='#modalPipeWrench', role='button', data-toggle='modal')
-          .col-sm-4
-            .panel
-              img(src='dist/images/043 Pipe wrench.jpg', alt='pipe wrench')
-              p
-                | PW01-0N2 Pipe Wrench
-        // end a col-sm-4
         #modalPipeWrench.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title PW01-0N2 Pipe Wrench
-
               .modal-body
                 img(src='dist/images/043 Pipe wrench.jpg', alt='pipe wrench')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Blade – Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalLockingGrip', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 6” Blade – Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalPipeWrench', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/016 Locking grip pliers set.jpg', alt='locking grip pliers set')
-              p
-                | LGPS04-0N2 Locking Grip Pliers Set
-        // end a col-sm-4
+              img(src='dist/images/043 Pipe wrench.jpg', alt='pipe wrench')
+              p PW01-0N2 Pipe Wrench
+        // end modalPipeWrench
+
         #modalLockingGrip.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title LGPS04-0N2 Locking Grip Pliers Set
-
+              // end modal-header
               .modal-body
                 img(src='dist/images/016 Locking grip pliers set.jpg', alt='locking grip pliers set')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Blade – Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalAdjustable', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 6” Blade – Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalLockingGrip', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/019Adjustable wrench set.jpg', alt='adjustable wrench set')
-              p
-                | AWS04-0N2 Adjustable Wrench Set
-        // end a col-sm-4
+              img(src='dist/images/016 Locking grip pliers set.jpg', alt='locking grip pliers set')
+              p LGPS04-0N2 Locking Grip Pliers Set
+        // end modalLockingGrip
+
         #modalAdjustable.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title AWS04-0N2 Adjustable Wrench Set
-
               .modal-body
                 img(src='dist/images/019Adjustable wrench set.jpg', alt='adjustable wrench set')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Blade – Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalBoxEnd', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 6” Blade – Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalAdjustable', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/001Boxed end wrench.jpg', alt='boxed end wrench set')
-              p
-                | BESS15-0N2 Box End Standard Wrench Set
-        // end a col-sm-4
+              img(src='dist/images/019Adjustable wrench set.jpg', alt='adjustable wrench set')
+              p AWS04-0N2 Adjustable Wrench Set
+        // end modalAdjustable
+
         #modalBoxEnd.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title BESS15-0N2 Box End Standard Wrench Set
-
               .modal-body
                 img(src='dist/images/001Boxed end wrench.jpg', alt='boxed end wrench set')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Blade – Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalEndStandard', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 6” Blade – Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalBoxEnd', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/007Open end wrench set.jpg', alt='open end wrench set')
-              p
-                | OESS15-0N2 Open End Standard Wrench Set
-        // end a col-sm-4
+              img(src='dist/images/001Boxed end wrench.jpg', alt='boxed end wrench set')
+              p BESS15-0N2 Box End Standard Wrench Set
+        // end modalBoxEnd
+
         #modalEndStandard.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title OESS15-0N2 Open End Standard Wrench Set
-
               .modal-body
                 img(src='dist/images/007Open end wrench set.jpg', alt='open end wrench set')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Blade – Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalRatchet', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 6” Blade – Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalEndStandard', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/025 Rachet set.jpg', alt='rachet wrench set')
-              p
-                | RWS04-0N2 Ratchet Wrench Set
-        // end a col-sm-4
+              img(src='dist/images/007Open end wrench set.jpg', alt='open end wrench set')
+              p OESS15-0N2 Open End Standard Wrench Set
+        // end modalEndStandard
+
         #modalRatchet.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4 RWS04-0N2 Ratchet Wrench Set
-
               .modal-body
                 img(src='dist/images/025 Rachet set.jpg', alt='rachet wrench set')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Blade – Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalYankeePush', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 6” Blade – Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalRatchet', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/033 Yankee Push Screwdriver.jpg', alt='yankee push screwdriver')
-              p
-                | Yankee Push Screwdriver
-        // end a col-sm-4
+              img(src='dist/images/025 Rachet set.jpg', alt='rachet wrench set')
+              p RWS04-0N2 Ratchet Wrench Set
+        // end modalRatchet
+
         #modalYankeePush.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Yankee Push Screwdriver
-
               .modal-body
                 img(src='dist/images/033 Yankee Push Screwdriver.jpg', alt='yankee push screwdriver')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Blade – Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalLockingGrip', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 6” Blade – Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalYankeePush', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/037Locking grip C clamp.jpg', alt='locking grip C clamp')
-              p
-                | LGCC01-0N2 Locking Grip C-Clamp
-        // end a col-sm-4
+              img(src='dist/images/033 Yankee Push Screwdriver.jpg', alt='yankee push screwdriver')
+              p Yankee Push Screwdriver
+        // end modalYankeePush
+
         #modalLockingGrip.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal')
                 h4.modal-title LGCC01-0N2 Locking Grip C-Clamp
-
               .modal-body
                 img(src='dist/images/037Locking grip C clamp.jpg', alt='locking grip C clamp')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Blade – Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalAllPurp', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 6” Blade – Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalLockingGrip', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/008,Clamp.jpg', alt='clamp')
-              p
-                | APQGA01-0N2 All Purpose Quick Grip Adapter
-        // end a col-sm-4
+              img(src='dist/images/037Locking grip C clamp.jpg', alt='locking grip C clamp')
+              p LGCC01-0N2 Locking Grip C-Clamp
+        // end modalLockingGrip
+
         #modalAllPurp.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title APQGA01-0N2 All Purpose Quick Grip Adapter
-
               .modal-body
                 img(src='dist/images/008,Clamp.jpg', alt='clamp')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Blade – Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalFileSet', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 6” Blade – Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalAllPurp', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/029 File Set.jpg', alt='file set')
-              p
-                | FS05-0N2 File Set
-        // end a col-sm-4
+              img(src='dist/images/008,Clamp.jpg', alt='clamp')
+              p APQGA01-0N2 All Purpose Quick Grip Adapter
+        // end modalAllPurp
+
         #modalFileSet.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title FS05-0N2 File Set
-
               .modal-body
                 img(src='dist/images/029 File Set.jpg', alt='file set')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Forschner
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Blade – Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalHobbyFile', role='button', data-toggle='modal')
+                p Manufacturer: Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 6” Blade – Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalFileSet', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/032 Hobby file set.jpg', alt='hobby file set')
-              p
-                | Hobby File Set
-        // end a col-sm-4
+              img(src='dist/images/029 File Set.jpg', alt='file set')
+              p FS05-0N2 File Set
+        // end modalFileSet
+
         #modalHobbyFile.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Hobby File Set
-
               .modal-body
                 img(src='dist/images/032 Hobby file set.jpg', alt='hobby file set')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Forschner
+                p Manufacturer:  Forschner
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 6” Blade – Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalHobbyFile', role='button', data-toggle='modal')
+          .col-sm-4
+            .panel
+              img(src='dist/images/032 Hobby file set.jpg', alt='hobby file set')
+              p Hobby File Set
+        // end modalHobbyFile
 
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Blade – Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-      // end gallery
-    // end mechanic
     #n-abler
       h2.gallery-heading N-Abler
       #gallery.row
-        a(href='#modalNablerII', role='button', data-toggle='modal')
-          .col-sm-6
-            .panel
-              img(src='dist/images/147 N Abler II.jpg', alt='n-abler II')
-              p
-                | TD-0N2 N-Abler II ™ Terminal Device
-        // end a col-sm-6
         #modalNablerII.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title TD-0N2 N-Abler II ™ Terminal Device
-
               .modal-body
                 img(src='dist/images/147 N Abler II.jpg', alt='n-abler II')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assisitve Devices, LLC
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  //
-                    < p>Size:</ p> 6” Blade – Full Tang<  />
-                    < p>Shank:</ p> Standard N-Abler™ Shank – 316 Stainless Steel<  />
-                    < p>Attach Site:</ p> N-Abler II™
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalAB', role='button', data-toggle='modal')
+                p Manufacturer: Texas Assisitve Devices, LLC
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+        a(href='#modalNablerII', role='button', data-toggle='modal')
           .col-sm-6
             .panel
-              img(src='dist/images/159 AB Wrist.jpg', alt='n-abler 5 AB')
-              p
-                | N-Abler V ™ AB Version Body Powered Five Function Wrist
-        // end a col-sm-6
+              img(src='dist/images/147 N Abler II.jpg', alt='n-abler II')
+              p TD-0N2 N-Abler II ™ Terminal Device
+        // end modalNablerII
+
         #modalAB.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title N-Abler V ™ AB - Body Powered Five Function Wrist
-
               .modal-body
                 img(src='dist/images/159 AB Wrist.jpg', alt='n-abler 5 AB')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assistive Devices, LLC
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  //
-                    < p>Size:</ p> 6” Blade – Full Tang<  />
-                    < p>Shank:</ p> Standard N-Abler™ Shank – 316 Stainless Steel<  />
-                    < p>Attach Site:</ p> N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalA', role='button', data-toggle='modal')
+                p Manufacturer: Texas Assistive Devices, LLC
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+        a(href='#modalAB', role='button', data-toggle='modal')
           .col-sm-6
             .panel
-              img(src='dist/images/163  A Wrist.jpg', alt='n-abler 5 A')
-              p
-                | N-Abler V ™ A - Body Powered Five Function Wrist
-        // end a col-sm-6
+              img(src='dist/images/159 AB Wrist.jpg', alt='n-abler 5 AB')
+              p N-Abler V ™ AB Version Body Powered Five Function Wrist
+        // end modalAB
+
         #modalA.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title N-Abler V ™ A Version Body Powered Five Function Wrist
-
               .modal-body
                 img(src='dist/images/163  A Wrist.jpg', alt='n-abler 5 A')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assistive Devices, LLC
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  //
-                    < p>Size:</ p> 6” Blade – Full Tang<  />
-                    < p>Shank:</ p> Standard N-Abler™ Shank – 316 Stainless Steel<  />
-                    < p>Attach Site:</ p> N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalB', role='button', data-toggle='modal')
+                p Manufacturer: Texas Assistive Devices, LLC
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+        a(href='#modalA', role='button', data-toggle='modal')
           .col-sm-6
             .panel
-              img(src='dist/images/164 B Wrist.jpg', alt='n-abler 5 B')
-              p
-                | N-Abler V ™ B - Body Powered Five Function Wrist
-        // end a col-sm-6
+              img(src='dist/images/163  A Wrist.jpg', alt='n-abler 5 A')
+              p N-Abler V ™ A - Body Powered Five Function Wrist
+        // end modalA
+
         #modalB.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title N-Abler V ™ B Version Body Powered Five Function Wrist
-
               .modal-body
                 img(src='dist/images/164 B Wrist.jpg', alt='n-abler 5 B')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assistive Devices, LLC
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  //
-                    < p>Size:</ p> 6” Blade – Full Tang<  />
-                    < p>Shank:</ p> Standard N-Abler™ Shank – 316 Stainless Steel<  />
-                    < p>Attach Site:</ p> N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalBHook', role='button', data-toggle='modal')
+                p Manufacturer: Texas Assistive Devices, LLC
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+        a(href='#modalB', role='button', data-toggle='modal')
           .col-sm-6
             .panel
-              img(src='dist/images/209  B Wrist W Hook, Angles,25 deg.jpg', alt='209  B Wrist W Hook')
-              p
-                | B Wrist W Hook
-        // end a col-sm-6
+              img(src='dist/images/164 B Wrist.jpg', alt='n-abler 5 B')
+              p N-Abler V ™ B - Body Powered Five Function Wrist
+        // end moalB
+
         #modalBHook.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title B Wrist W Hook
-
               .modal-body
                 img(src='dist/images/209  B Wrist W Hook, Angles,25 deg.jpg', alt='209  B Wrist W Hook')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assistive Devices, LLC
+                p Manufacturer: Texas Assistive Devices, LLC
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+        a(href='#modalBHook', role='button', data-toggle='modal')
+          .col-sm-6
+            .panel
+              img(src='dist/images/209  B Wrist W Hook, Angles,25 deg.jpg', alt='209  B Wrist W Hook')
+              p B Wrist W Hook
+        // end modalBHook
 
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  //
-                    < p>Size:</ p> 6” Blade – Full Tang<  />
-                    < p>Shank:</ p> Standard N-Abler™ Shank – 316 Stainless Steel<  />
-                    < p>Attach Site:</ p> N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-      // end gallery
-    // end n-abler
     #sports-gear
       h2.gallery-heading Sports Gear
       #gallery.row
-        a(href='#modalFishing5', role='button', data-toggle='modal')
-          .col-sm-4
-            .panel
-              img(src='dist/images/056 Fishing Rod, .5  in 20 thread.jpg', alt='fishing rod .5 in 20 thread')
-              p
-                | Fishing Rod, .5” 20 Thread
-        // end a col-sm-4
         #modalFishing5.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Fishing Rod, .5” 20 Thread
-
               .modal-body
                 img(src='dist/images/056 Fishing Rod, .5  in 20 thread.jpg', alt='fishing rod .5 in 20 thread')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Shakespeare ® Ugly Stick ®
-
-                   p Material:
-                  |  Graphite Inner Core & E-Glass outer layer
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Medium
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalFishingStand', role='button', data-toggle='modal')
+                p Manufacturer:  Shakespeare ® Ugly Stick ®
+                p Material: Graphite Inner Core & E-Glass outer layer
+                p No. Pieces: 1
+                p Size: 6” Medium
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalFishing5', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/066 Fishing Rod, Standard Shank.jpg', alt='fishing rod, standard shank')
-              p
-                | Fishing Rod, Standard Shank
-        // end a col-sm-4
+              img(src='dist/images/056 Fishing Rod, .5  in 20 thread.jpg', alt='fishing rod .5 in 20 thread')
+              p Fishing Rod, .5” 20 Thread
+        // end modalFishing5
+
         #modalFishingStand.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Fishing Rod, Standard Shank
-
               .modal-body
                 img(src='dist/images/066 Fishing Rod, Standard Shank.jpg', alt='fishing rod, standard shank')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Shakespeare ® Ugly Stick ®
-
-                   p Material:
-                  |  Graphite Inner Core & E-Glass outer layer
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Medium
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalFishingBoth', role='button', data-toggle='modal')
+                p Manufacturer: Shakespeare ® Ugly Stick ®
+                p Material: Graphite Inner Core & E-Glass outer layer
+                p No. Pieces: 1
+                p Size: 6” Medium
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalFishingStand', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/074 Fishing Rod,both shanks.jpg', alt='fishing rod, both shanks')
-              p
-                | Fishing Rod, Both Shanks
-        // end a col-sm-4
+              img(src='dist/images/066 Fishing Rod, Standard Shank.jpg', alt='fishing rod, standard shank')
+              p Fishing Rod, Standard Shank
+        // end modalFishingStand
+
         #modalFishingBoth.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Fishing Rod, Both Shanks
-
               .modal-body
                 img(src='dist/images/074 Fishing Rod,both shanks.jpg', alt='fishing rod, both shanks')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Shakespeare ® Ugly Stick ®
-
-                   p Material:
-                  |  Graphite Inner Core & E-Glass outer layer
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Medium
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalPool idge', role='button', data-toggle='modal')
+                p Manufacturer: Shakespeare ® Ugly Stick ®
+                p Material: Graphite Inner Core & E-Glass outer layer
+                p No. Pieces: 1
+                p Size: 6” Medium
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalFishingBoth', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/051 Pool  idge.jpg', alt='pool  idge')
-              p
-                | Pool  idge
-        // end a col-sm-4
-        #modalPool idge.modal.fade
+              img(src='dist/images/074 Fishing Rod,both shanks.jpg', alt='fishing rod, both shanks')
+              p Fishing Rod, Both Shanks
+        // end modalFishingBoth
+
+        #modalPoolBridge.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
-                h4.modal-title Pool  idge
-
+                h4.modal-title Pool Bridge
               .modal-body
-                img(src='dist/images/051 Pool  idge.jpg', alt='pool  idge')
+                img(src='dist/images/051 Pool Bridge.jpg', alt='pool bridge')
                 h4 Specifications:
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Density Polyethylene & 3/8” 316 Stainless Steel Tubing
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalLockingGrip', role='button', data-toggle='modal')
+                p Material: High Density Polyethylene & 3/8” 316 Stainless Steel Tubing
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalPoolBridge', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/037Locking grip C clamp.jpg', alt='locking grip C clamp')
-              p
-                | LGCC01-0N2 Locking Grip C-Clamp
-        // end a col-sm-4
+              img(src='dist/images/051 Pool Bridge.jpg', alt='pool bridge')
+              p Pool Bridge
+        // end modalPoolBridge
+
         #modalLockingGrip.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title LGCC01-0N2 Locking Grip C-Clamp
-
               .modal-body
                 img(src='dist/images/037Locking grip C clamp.jpg', alt='locking grip C clamp')
                 h4 Specifications:
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalNablerCrank', role='button', data-toggle='modal')
+                p Material: Stainless Steel
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalLockingGrip', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/075 Nabler with crank adapter.jpg', alt='n-abler with crank adapter')
-              p
-                | N-Abler with Crank Adapter
-        // end a col-sm-4
+              img(src='dist/images/037Locking grip C clamp.jpg', alt='locking grip C clamp')
+              p LGCC01-0N2 Locking Grip C-Clamp
+        // end modalLockingGrip
+
         #modalNablerCrank.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title N-Abler with Crank Adapter
-
               .modal-body
                 img(src='dist/images/075 Nabler with crank adapter.jpg', alt='n-abler with crank adapter')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assistive Devices, LLC
-
-                   p Material:
-                  |  High Carbon Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  6” Blade – Full Tang
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalQuickRel', role='button', data-toggle='modal')
+                p Manufacturer: Texas Assistive Devices, LLC
+                p Material: High Carbon Stainless Steel
+                p No. Pieces: 1
+                p Size: 6” Blade – Full Tang
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalNablerCrank', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/002_Quick Release Gripper.jpg', alt='release gripper')
-              p
-                | QRG05-0N2 Quick Release Gripper
-        // end a col-sm-4
+              img(src='dist/images/075 Nabler with crank adapter.jpg', alt='n-abler with crank adapter')
+              p N-Abler with Crank Adapter
+        // end modalNablerCrank
+
         #modalQuickRel.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title QRG05-0N2 Quick Release Gripper
-
               .modal-body
                 img(src='dist/images/002_Quick Release Gripper.jpg', alt='release gripper')
                 h4 Specifications:
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Standard
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalAllPurpCrank', role='button', data-toggle='modal')
+                p Material: Stainless Steel
+                p No. Pieces: 1
+                p Size: Standard
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalQuickRel', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/016 All Purpose Crank Adapter.jpg', alt='all purpose crank adapter')
-              p
-                | APCA01-0N2 All Purpose Crank Adapter
-        // end a col-sm-4
+              img(src='dist/images/002_Quick Release Gripper.jpg', alt='release gripper')
+              p QRG05-0N2 Quick Release Gripper
+        // end modalQuickRel
+
         #modalAllPurpCrank.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title APCA01-0N2 All Purpose Crank Adapter
-
               .modal-body
                 img(src='dist/images/016 All Purpose Crank Adapter.jpg', alt='all purpose crank adapter')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assistive Devices, LLC
-
-                   p Material:
-                  |  Acidel Delran
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Fits Most Light Fishing Reel Crank Handles
-
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalWeightLift', role='button', data-toggle='modal')
+                p Manufacturer: Texas Assistive Devices, LLC
+                p Material: Acidel Delran
+                p No. Pieces: 1
+                p Size: Fits Most Light Fishing Reel Crank Handles
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalAllPurpCrank', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/008 Threaded weight lifting device.jpg', alt='threaded weight lifting device')
-              p
-                | WLD05-0N2 Weight Lifting Device W/ ½” 20 Threaded Shank
-        // end a col-sm-4
+              img(src='dist/images/016 All Purpose Crank Adapter.jpg', alt='all purpose crank adapter')
+              p APCA01-0N2 All Purpose Crank Adapter
+        // end modalPurpCrank
+
         #modalWeightLift.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title WLD05-0N2 Weight Lifting Device W/ ½” 20 Threaded Shank
-
               .modal-body
                 img(src='dist/images/008 Threaded weight lifting device.jpg', alt='threaded weight lifting device')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assistive Devices, LLC
-
-                   p Material:
-                  |  316 Stainless Steel W/ Acidel Delran Liner
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalWeightLift2', role='button', data-toggle='modal')
+                p Manufacturer: Texas Assistive Devices, LLC
+                p Material: 316 Stainless Steel W/ Acidel Delran Liner
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalWeightLift', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/011Weight lifting device.jpg', alt='weight lifting device')
-              p
-                | WLD04-0N2 Weight Lifting Device
-        // end a col-sm-4
+              img(src='dist/images/008 Threaded weight lifting device.jpg', alt='threaded weight lifting device')
+              p WLD05-0N2 Weight Lifting Device W/ ½” 20 Threaded Shank
+        // end modalWeightLift
+
         #modalWeightLift2.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title WLD04-0N2 Weight Lifting Device
-
               .modal-body
                 img(src='dist/images/011Weight lifting device.jpg', alt='weight lifting device')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assistive Devices, LLC
-
-                   p Material:
-                  |  316 Stainless Steel W/ Acidel Delran Liner
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalPassiveHook', role='button', data-toggle='modal')
+                p Manufacturer: Texas Assistive Devices, LLC
+                p Material: 316 Stainless Steel W/ Acidel Delran Liner
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalWeightLift2', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/020 Passive Hook Weight Lifting Device, .5 in 20.jpg', alt='passive hook weight lifting device, .5in 20')
-              p
-                | Passive Hook Weight Lifting Device, .5” 20
-        // end a col-sm-4
+              img(src='dist/images/011Weight lifting device.jpg', alt='weight lifting device')
+              p WLD04-0N2 Weight Lifting Device
+        // end modalWeightLift2
+
         #modalPassiveHook.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Passive Hook Weight Lifting Device, .5” 20
-
               .modal-body
                 img(src='dist/images/020 Passive Hook Weight Lifting Device, .5 in 20.jpg', alt='passive hook weight lifting device, .5in 20')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assistive Devices, LLC
-
-                   p Material:
-                  |  3/8” 316 Stainless Steel Tubing W/ 3 Coats of Performix Rubber Coating
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Designed to Safely Cradle most Rifles & Shotguns
-
-                   p Shank:
-                  |  Shank: Standard N-Abler™ Shank – 316 Stainless Steel – Also Equipped with ½” 20 Threaded Shank
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalPassiveHook2', role='button', data-toggle='modal')
+                p Manufacturer: Texas Assistive Devices, LLC
+                p Material: 3/8” 316 Stainless Steel Tubing W/ 3 Coats of Performix Rubber Coating
+                p No. Pieces: 1
+                p Size: Designed to Safely Cradle most Rifles & Shotguns
+                p Shank: Shank: Standard N-Abler™ Shank – 316 Stainless Steel – Also Equipped with ½” 20 Threaded Shank
+                p Attach Site: N-Abler II™
+        a(href='#modalPassiveHook', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/022 Passive Hook Weight Lifting Device, standard shank.jpg', alt='Passive Hook Weight Lifting Device, standard shank')
-              p
-                | Passive Hook Weight Lifting Device, Standard Shank
-        // end a col-sm-4
+              img(src='dist/images/020 Passive Hook Weight Lifting Device, .5 in 20.jpg', alt='passive hook weight lifting device, .5in 20')
+              p Passive Hook Weight Lifting Device, .5” 20
+        // end modalPassiveHook
+
         #modalPassiveHook2.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Passive Hook Weight Lifting Device, Standard Shank
-
               .modal-body
                 img(src='dist/images/022 Passive Hook Weight Lifting Device, standard shank.jpg', alt='Passive Hook Weight Lifting Device, standard shank')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assistive Devices, LLC
+                p Manufacturer: Texas Assistive Devices, LLC
+                p Material: 3/8” 316 Stainless Steel Tubing W/ 3 Coats of Performix Rubber Coating
+                p No. Pieces: 1
+                p Size: Designed to Safely Cradle most Rifles & Shotguns
+                p Shank: Shank: Standard N-Abler™ Shank – 316 Stainless Steel – Also Equipped with ½” 20 Threaded Shank
+                p Attach Site: N-Abler II™
+          a(href='#modalPassiveHook2', role='button', data-toggle='modal')
+            .col-sm-4
+              .panel
+                img(src='dist/images/022 Passive Hook Weight Lifting Device, standard shank.jpg', alt='Passive Hook Weight Lifting Device, standard shank')
+                p Passive Hook Weight Lifting Device, Standard Shank
+        // end modalPassiveHook2
 
-                   p Material:
-                  |  3/8” 316 Stainless Steel Tubing W/ 3 Coats of Performix Rubber Coating
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Designed to Safely Cradle most Rifles & Shotguns
-
-                   p Shank:
-                  |  Shank: Standard N-Abler™ Shank – 316 Stainless Steel – Also Equipped with ½” 20 Threaded Shank
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalRingControl', role='button', data-toggle='modal')
-          .col-sm-4
-            .panel
-              img(src='dist/images/027 Ring Control Tool.jpg', alt='ring control tool')
-              p
-                | Ring Control Tool
-        // end a col-sm-4
         #modalRingControl.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Ring Control Tool
-
               .modal-body
                 img(src='dist/images/027 Ring Control Tool.jpg', alt='ring control tool')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assistive Devices, LLC
-
-                   p Material:
-                  |  3/8” 316 Stainless Steel Tubing W/ 3 Coats of Performix Rubber Coating
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Designed to Safely Cradle most Rifles & Shotguns
-
-                   p Shank:
-                  |  Shank: Standard N-Abler™ Shank – 316 Stainless Steel – Also Equipped with ½” 20 Threaded Shank
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalUniv', role='button', data-toggle='modal')
+                p Manufacturer: Texas Assistive Devices, LLC
+                p Material: 3/8” 316 Stainless Steel Tubing W/ 3 Coats of Performix Rubber Coating
+                p No. Pieces: 1
+                p Size: Designed to Safely Cradle most Rifles & Shotguns
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel – Also Equipped with ½” 20 Threaded Shank
+                p Attach Site: N-Abler II™
+        a(href='#modalRingControl', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/029 Universal HH,.5in20 thread.jpg', alt='universal HH, .5in 20')
-              p
-                | Universal HH, .5” 20
-        // end a col-sm-4
+              img(src='dist/images/027 Ring Control Tool.jpg', alt='ring control tool')
+              p Ring Control Tool
+        // end modalRingControl
+
         #modalUniv.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Universal HH, .5” 20
-
               .modal-body
                 img(src='dist/images/029 Universal HH,.5in20 thread.jpg', alt='universal HH, .5in 20')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assistive Devices, LLC
-
-                   p Material:
-                  |  3/8” 316 Stainless Steel Tubing W/ 3 Coats of Performix Rubber Coating
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Designed to Safely Cradle most Rifles & Shotguns
-
-                   p Shank:
-                  |  Shank: Standard N-Abler™ Shank – 316 Stainless Steel – Also Equipped with ½” 20 Threaded Shank
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalUniv2', role='button', data-toggle='modal')
+                p Manufacturer: Texas Assistive Devices, LLC
+                p Material: 3/8” 316 Stainless Steel Tubing W/ 3 Coats of Performix Rubber Coating
+                p No. Pieces: 1
+                p Size: Designed to Safely Cradle most Rifles & Shotguns
+                p Shank: Shank: Standard N-Abler™ Shank – 316 Stainless Steel – Also Equipped with ½” 20 Threaded Shank
+                p Attach Site: N-Abler II™
+        a(href='#modalUniv', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/034 Universal HH,standard shank.jpg', alt='Universal HH, Standard Shank')
-              p
-                | Universal HH, Standard Shank
-        // end a col-sm-4
+              img(src='dist/images/029 Universal HH,.5in20 thread.jpg', alt='universal HH, .5in 20')
+              p Universal HH, .5” 20
+        // end modalUniv
+
         #modalUniv2.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Universal HH, Standard Shank
-
               .modal-body
                 img(src='dist/images/034 Universal HH,standard shank.jpg', alt='Universal HH, Standard Shank')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assistive Devices, LLC
-
-                   p Material:
-                  |  3/8” 316 Stainless Steel Tubing W/ 3 Coats of Performix Rubber Coating
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Designed to Safely Cradle most Rifles & Shotguns
-
-                   p Shank:
-                  |  Shank: Standard N-Abler™ Shank – 316 Stainless Steel – Also Equipped with ½” 20 Threaded Shank
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalToolCradle', role='button', data-toggle='modal')
+                p Manufacturer: Texas Assistive Devices, LLC
+                p Material: 3/8” 316 Stainless Steel Tubing W/ 3 Coats of Performix Rubber Coating
+                p No. Pieces: 1
+                p Size: Designed to Safely Cradle most Rifles & Shotguns
+                p Shank: Shank: Standard N-Abler™ Shank – 316 Stainless Steel – Also Equipped with ½” 20 Threaded Shank
+                p Attach Site: N-Abler II™
+        a(href='#modalUniv2', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/035 Tool Cradle Standard Shank.jpg', alt='Tool Cradle Standard Shank')
-              p
-                | Tool Cradle Standard Shank
-        // end a col-sm-4
+              img(src='dist/images/034 Universal HH,standard shank.jpg', alt='Universal HH, Standard Shank')
+              p Universal HH, Standard Shank
+        // end modalUniv2
+
         #modalToolCradle.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Tool Cradle Standard Shank
-
               .modal-body
                 img(src='dist/images/035 Tool Cradle Standard Shank.jpg', alt='Tool Cradle Standard Shank')
                 h4 Specifications:
-                p
-                   p Manufacturer:
-                  |  Texas Assistive Devices, LLC
+                p Manufacturer: Texas Assistive Devices, LLC
+                p Material: 3/8” 316 Stainless Steel Tubing W/ 3 Coats of Performix Rubber Coating
+                p No. Pieces: 1
+                p Size: Designed to Safely Cradle most Rifles & Shotguns
+                p Shank: Shank: Standard N-Abler™ Shank – 316 Stainless Steel – Also Equipped with ½” 20 Threaded Shank
+                p Attach Site: N-Abler II™
+        a(href='#modalToolCradle', role='button', data-toggle='modal')
+          .col-sm-4
+            .panel
+              img(src='dist/images/035 Tool Cradle Standard Shank.jpg', alt='Tool Cradle Standard Shank')
+              p Tool Cradle Standard Shank
+        // end modalToolCradle
 
-                   p Material:
-                  |  3/8” 316 Stainless Steel Tubing W/ 3 Coats of Performix Rubber Coating
-
-                   p No. Pieces:
-                  |  1
-
-                   p Size:
-                  |  Designed to Safely Cradle most Rifles & Shotguns
-
-                   p Shank:
-                  |  Shank: Standard N-Abler™ Shank – 316 Stainless Steel – Also Equipped with ½” 20 Threaded Shank
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-      // end gallery
-    // end sports-gear
     #utencils
       h2.gallery-heading Utencils
       #gallery.row
-        a(href='#modalDiningSpoon', role='button', data-toggle='modal')
-          .col-sm-4
-            .panel
-              img(src='dist/images/044_Dining spoon.jpg', alt='dining spoon')
-              p
-                | Dining Spoon
-        // end a col-sm-4
         #modalDiningSpoon.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Dining Spoon
-
               .modal-body
                 img(src='dist/images/044_Dining spoon.jpg', alt='dining spoon')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalTableSpoon', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalDiningSpoon', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/054_Table spoon.jpg', alt='table spoon')
-              p
-                | Table Spoon
-        // end a col-sm-4
+              img(src='dist/images/044_Dining spoon.jpg', alt='dining spoon')
+              p Dining Spoon
+        // end modalDiningSpoon
+
         #modalTableSpoon.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Table Spoon
-
               .modal-body
                 img(src='dist/images/054_Table spoon.jpg', alt='table spoon')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalKitchenSpoon', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalTableSpoon', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/077_Kitchen spoon.jpg', alt='kitchen spoon')
-              p
-                | Kitchen Spoon
-        // end a col-sm-4
+              img(src='dist/images/054_Table spoon.jpg', alt='table spoon')
+              p Table Spoon
+        // end modalTableSpoon
+
         #modalKitchenSpoon.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Kitchen Spoon
-
               .modal-body
                 img(src='dist/images/077_Kitchen spoon.jpg', alt='kitchen spoon')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalSlottedSpoon', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalKitchenSpoon', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/088_Slotted spoon.jpg', alt='slotted spoon')
-              p
-                | Slotted Spoon
-        // end a col-sm-4
+              img(src='dist/images/077_Kitchen spoon.jpg', alt='kitchen spoon')
+              p Kitchen Spoon
+        // end modalKitchenSpoon
+
         #modalSlottedSpoon.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Slotted Spoon
-
               .modal-body
                 img(src='dist/images/088_Slotted spoon.jpg', alt='slotted spoon')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalLadleSpoon', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalSlottedSpoon', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/065_Ladle spoon.jpg', alt='ladle spoon')
-              p
-                | Ladle Spoon
-        // end a col-sm-4
+              img(src='dist/images/088_Slotted spoon.jpg', alt='slotted spoon')
+              p Slotted Spoon
+        // end modalSlottedSpoon
+
         #modalLadleSpoon.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Ladle Spoon
-
               .modal-body
                 img(src='dist/images/065_Ladle spoon.jpg', alt='ladle spoon')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalSkimmer', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalLadleSpoon', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/052_skimmer.jpg', alt='skimmer')
-              p
-                | Skimmer
-        // end a col-sm-4
+              img(src='dist/images/065_Ladle spoon.jpg', alt='ladle spoon')
+              p Ladle Spoon
+        // end modalLadleSpoon
+
         #modalSkimmer.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Skimmer
-
               .modal-body
                 img(src='dist/images/052_skimmer.jpg', alt='skimmer')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalDiningFork', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalSkimmer', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/034_Dining fork.jpg', alt='dining fork')
-              p
-                | Dining Fork
-        // end a col-sm-4
+              img(src='dist/images/052_skimmer.jpg', alt='skimmer')
+              p Skimmer
+        // end modalSkimmer
+
         #modalDiningFork.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Dining Fork
-
               .modal-body
                 img(src='dist/images/034_Dining fork.jpg', alt='dining fork')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalCarvingFork', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalDiningFork', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/038_carving fork.jpg', alt='carving fork')
-              p
-                | Carving Fork
-        // end a col-sm-4
+              img(src='dist/images/034_Dining fork.jpg', alt='dining fork')
+              p Dining Fork
+        // end modalDiningFork
+
         #modalCarvingFork.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Carving Fork
-
               .modal-body
                 img(src='dist/images/038_carving fork.jpg', alt='carving fork')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalPotFork', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalCarvingFork', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/049_Pot fork.jpg', alt='pot fork')
-              p
-                | Pot Fork
-        // end a col-sm-4
+              img(src='dist/images/038_carving fork.jpg', alt='carving fork')
+              p Carving Fork
+        // end modalCarvingFork
+
         #modalPotFork.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Pot Fork
-
               .modal-body
                 img(src='dist/images/049_Pot fork.jpg', alt='pot fork')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalDiningKnife', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalPotFork', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/013_Dining.jpg', alt='dining knife')
-              p
-                | Dining Knife
-        // end a col-sm-4
+              img(src='dist/images/049_Pot fork.jpg', alt='pot fork')
+              p Pot Fork
+        // end modalPotFork
+
         #modalDiningKnife.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Dining Knife
-
               .modal-body
                 img(src='dist/images/013_Dining.jpg', alt='dining knife')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalSteakKnife', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalDiningKnife', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/005_Steak.jpg', alt='steak knife')
-              p
-                | Steak Knife
-        // end a col-sm-4
+              img(src='dist/images/013_Dining.jpg', alt='dining knife')
+              p Dining Knife
+        // end modalDiningKnife
+
         #modalSteakKnife.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Steak Knife
-
               .modal-body
                 img(src='dist/images/005_Steak.jpg', alt='steak knife')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalWhisk', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalSteakKnife', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/070_Whisk.jpg', alt='whisk')
-              p
-                | Whisk
-        // end a col-sm-4
+              img(src='dist/images/005_Steak.jpg', alt='steak knife')
+              p Steak Knife
+        // end modalSteakKnife
+
         #modalWhisk.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Whisk
-
               .modal-body
                 img(src='dist/images/070_Whisk.jpg', alt='whisk')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalPotatoMasher', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalWhisk', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/083_Potato masher.jpg', alt='potato masher')
-              p
-                | Potato Masher
-        // end a col-sm-4
+              img(src='dist/images/070_Whisk.jpg', alt='whisk')
+              p Whisk
+        // end modalWhisk
+
         #modalPotatoMasher.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Potato Masher
-
               .modal-body
                 img(src='dist/images/083_Potato masher.jpg', alt='potato masher')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalPotatoMasher-two', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalPotatoMasher', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/047 Potato Masher.jpg', alt='potato masher')
-              p
-                | Potato Masher
-        // end a col-sm-4
+              img(src='dist/images/083_Potato masher.jpg', alt='potato masher')
+              p Potato Masher
+        // end modalPotatoMasher
+
         #modalPotatoMasher-two.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Potato Masher
-
               .modal-body
                 img(src='dist/images/047 Potato Masher.jpg', alt='potato masher')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalBurgerTurner', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalPotatoMasher-two', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/072_Burger turner.jpg', alt='burger turner')
-              p
-                | Burger Turner
-        // end a col-sm-4
+              img(src='dist/images/047 Potato Masher.jpg', alt='potato masher')
+              p Potato Masher
+        // end modalPotatoMasher-two
+
         #modalBurgerTurner.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Burger Turner
-
               .modal-body
                 img(src='dist/images/072_Burger turner.jpg', alt='burger turner')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalPieServer', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalBurgerTurner', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/091_Pie server.jpg', alt='pie server')
-              p
-                | Pie Server
-        // end a col-sm-4
+              img(src='dist/images/072_Burger turner.jpg', alt='burger turner')
+              p Burger Turner
+        // end modalBurgerTurner
+
         #modalPieServer.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Pie Server
-
               .modal-body
                 img(src='dist/images/091_Pie server.jpg', alt='pie server')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalOffsetSpatula', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalPieServer', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/063_Offset Spatula.jpg', alt='offset spatula')
-              p
-                | Offset Spatula
-        // end a col-sm-4
+              img(src='dist/images/091_Pie server.jpg', alt='pie server')
+              p Pie Server
+        // end modalPieServer
+
         #modalOffsetSpatula.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Offset Spatula
-
               .modal-body
                 img(src='dist/images/063_Offset Spatula.jpg', alt='offset spatula')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalSpatula', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalOffsetSpatula', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/027 Spatula.jpg', alt='spatula')
-              p
-                | Spatula
-        // end a col-sm-4
+              img(src='dist/images/063_Offset Spatula.jpg', alt='offset spatula')
+              p Offset Spatula
+        // end modalOffsetSpatula
+
         #modalSpatula.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Spatula
-
               .modal-body
                 img(src='dist/images/027 Spatula.jpg', alt='spatula')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalCheeseSlicer', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalSpatula', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/089_Cheese slicer.jpg', alt='cheese slicer')
-              p
-                | Cheese Slicer
-        // end a col-sm-4
+              img(src='dist/images/027 Spatula.jpg', alt='spatula')
+              p Spatula
+        // end modalSpatula
+
         #modalCheeseSlicer.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Cheese Slicer
-
               .modal-body
                 img(src='dist/images/089_Cheese slicer.jpg', alt='cheese slicer')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalCheeseGrater', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalCheeseSlicer', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/095_Cheese Grater.jpg', alt='cheese grater')
-              p
-                | Cheese Grater
-        // end a col-sm-4
+              img(src='dist/images/089_Cheese slicer.jpg', alt='cheese slicer')
+              p Cheese Slicer
+        // end modalCheeseSlicer
+
         #modalCheeseGrater.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Cheese Grater
-
               .modal-body
                 img(src='dist/images/095_Cheese Grater.jpg', alt='cheese grater')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalPotatoPeeler', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalCheeseGrater', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/100_potato peeler.jpg', alt='potato peeler')
-              p
-                | Potato Peeler
-        // end a col-sm-4
+              img(src='dist/images/095_Cheese Grater.jpg', alt='cheese grater')
+              p Cheese Grater
+        // end modalCheseGrater
+
         #modalPotatoPeeler.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Potato Peeler
-
               .modal-body
                 img(src='dist/images/100_potato peeler.jpg', alt='potato peeler')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalZester', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalPotatoPeeler', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/098_Zester.jpg', alt='zester')
-              p
-                | Zester
-        // end a col-sm-4
+              img(src='dist/images/100_potato peeler.jpg', alt='potato peeler')
+              p Potato Peeler
+        // end modalPotatoPeeler
+
         #modalZester.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Zester
-
               .modal-body
                 img(src='dist/images/098_Zester.jpg', alt='zester')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalPizzaCutter', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalZester', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/058_Pizza cutter.jpg', alt='pizza cutter')
-              p
-                | Pizza Cutter
-        // end a col-sm-4
+              img(src='dist/images/098_Zester.jpg', alt='zester')
+              p Zester
+        // end modalZester
+
         #modalPizzaCutter.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Pizza Cutter
-
               .modal-body
                 img(src='dist/images/058_Pizza cutter.jpg', alt='pizza cutter')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-        a(href='#modalMelonBaller', role='button', data-toggle='modal')
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalPizzaCutter', role='button', data-toggle='modal')
           .col-sm-4
             .panel
-              img(src='dist/images/097_Melon baller.jpg', alt='melon baller')
-              p
-                | Melon Baller
-        // end a col-sm-4
+              img(src='dist/images/058_Pizza cutter.jpg', alt='pizza cutter')
+              p Pizza Cutter
+        // end modalPizzaCutter
+
         #modalMelonBaller.modal.fade
           .modal-dialog
             .modal-content
               .modal-header
                 button.close(data-dismiss='modal') ×
                 h4.modal-title Melon Baller
-
               .modal-body
                 img(src='dist/images/097_Melon baller.jpg', alt='melon baller')
                 h4 Specifications:
-
-                p
-                  // < p>Manufacturer:</ p> Forschner<  />
-                   p Material:
-                  |  High Definition Stainless Steel
-
-                   p No. Pieces:
-                  |  1
-
-                  // < p>Size:</ p> 6” Blade – Full Tang<  />
-                   p Shank:
-                  |  Standard N-Abler™ Shank – 316 Stainless Steel
-
-                   p Attach Site:
-                  |  N-Abler II™
-              // end modal-body
-            // end modal-content
-          // end modal-dialog
-        // end modal
-      // end gallery
+                p Material: High Definition Stainless Steel
+                p No. Pieces: 1
+                p Shank: Standard N-Abler™ Shank – 316 Stainless Steel
+                p Attach Site: N-Abler II™
+        a(href='#modalMelonBaller', role='button', data-toggle='modal')
+          .col-sm-4
+            .panel
+              img(src='dist/images/097_Melon baller.jpg', alt='melon baller')
+              p Melon Baller
+        // end modalMelonBaller
     // end utencils
-  // end wrapper-content
+
   footer
     hr.footer-buffer
     .row
       #footerLeft.col-sm-3
         .footer-text
-           p N-Abler
-
+          p N-Abler
           a#footer-n-abler(href='#0') N-Abler II
-
           a#footer-n-abler_V(href='#0') Nabler V
-
-        // end footer-text
-      // end footerLeft
-       .hidden- eak
+        .hidden-break
       #footerInLeft.col-sm-3
         .footer-text
-           p Kitchen
-
+          p Kitchen
           a#footer-cutlery(href='#0') Cutlery
-
           a#footer-utencils(href='#0') Utencils
-        // end footer-text
-      // end footerInLeft
-       .hidden- eak
+        .hidden-break
       #footerInRight.col-sm-3
         .footer-text
-           p Outdoor
-
+          p Outdoor
           a#footer-carpentry(href='#0') Carpentry
-
           a#footer-gardening(href='#0') Gardening
-
           a#footer-mechanic(href='#0') Mechanic
-
           a#footer-sports-gear(href='#0') Sports Gear
-      // end footerInRight
-       .hidden- eak
+        .hidden-break
       #footerRight.col-sm-3
         .footer-text
-           p Other
-
+          p Other
           a#footer-hygiene(href='#0') Hygiene
-
           a#footer-components(href='#0') Components
-
-        // end footer-text
-      // end footerRight
-    // end div-footer
     hr.footer-buffer
-    a(href='https:// andnpatterson.github.io/')
+    a(href='https://brandnpatterson.github.io/')
       p.copyright
         | ©
         script(type='text/javascript').
           document.write(new Date().getFullYear());
-        |     andon Patterson. All Rights Reserved.
-  // end footer
+        | Brandon Patterson. All Rights Reserved.
 
   script(src='//code.jquery.com/jquery-2.2.4.min.js' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=' crossorigin='anonymous')
   script window.jQuery || document.write('<script src="dist/js/jquery/jquery-2.2.4.js"><\/script>')

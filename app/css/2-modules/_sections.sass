@@ -5,12 +5,23 @@
 
 #about p
   font-size: 15px
+  padding: 10px 0
   text-align: justify
+
+#content-container
+  margin: 0 auto
+  max-width: 80%
 
 #contact p
   font-size: 20px
 
-#main
+.author p
+  font-weight: bold
+
+.author
+  padding-top: 50px
+
+.first-panel, .forth-panel
   &.row
     margin: 0 auto
   p
@@ -18,29 +29,29 @@
     font-size: 30px
     text-align: center
 
-#main a, #more a
+.first-panel a, .third-panel a, .forth-panel a
   display: block
   text-align: center
 
-#main .panel h3, #more .panel h3
+.first-panel .panel h3, .third-panel .panel h3, .forth-panel h3
   font-size: 40px
   padding-bottom: 15px
   text-align: center
 
-#main .panel a, #more .panel a
+.first-panel .panel a, .third-panel .panel a, .forth-panel .panel a
   padding-top: 10px
 
-#main .panel img, #more .panel img
+.first-panel .panel img, .third-panel .panel img, .forth-panel .panel img
   border-radius: 10px
   box-shadow: 0 0 10px #777
   box-shadow-left: none
   margin: 0 0 40px
   max-width: 95%
 
-#more
+.third-panel
   margin-top: 20px
 
-#more p
+.third-panel p
   color: #777
   font-size: 30px
   text-align: center
@@ -57,16 +68,16 @@
   margin: 0 0 30px
   max-width: 100%
 
-#secondary
+.second-panel
   padding-top: 20px
   &.row
     text-align: center
 
-#secondaryLeft, #secondaryRight
+.second-panel-left, .second-panel-right
   padding-left: 100px
   padding-top: 10px
 
-#secondaryMid, #secondaryRight
+.second-panel-mid, .second-panel-right
   border-left: #ddd 1px solid
   padding-left: 100px
   height: 50px
@@ -100,10 +111,6 @@
 .copyright
   margin: 0 auto
   text-align: center
-
-.buffer
-  display: none
-  max-width: 95%
 
 .gallery-heading
   margin-top: 50px
