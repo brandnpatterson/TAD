@@ -1,82 +1,81 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-
-		<!-- style tags -->
 		<link href="dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="dist/css/style.min.css" rel="stylesheet">
     <link href="dist/images/favicon.ico" rel="icon" type="image/x-icon" />
-
-		<!-- title -->
 		<title>Texas Assistive Devices</title>
   </head>
   <body>
     <div class="container" id="wrapper">
       <div class="navbar navbar-top">
-        <a href="index.html"><h3 class="navbar-top_home"><img class="logo" src="dist/images/texas-final.png"/>exas Assistive Devices</h3></a>
+      <a href="index.html"><h3 class="navbar-top_home"><img class="logo" src="dist/images/texas-final.png"/>exas Assistive Devices</h3></a>
       </div>
-      <div class="navbar navbar-options">
-        <div class="container" id="myNavbar">
-          <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="nav-collapse collapse navbar-responsive-collapse">
+      <nav id="navbar-default" class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div><!-- end navbar-header -->
+
+          <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav pull-left">
               <li>
-                <a id="nav-home" href="#0">Home</a>
+                <a id="nav-home" href="index.html">Home</a>
               </li>
               <li>
                 <a id="nav-n-abler" href="#0">N-Abler</a>
               </li>
               <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown">Kitchen<strong class="caret"></strong></a>
+                <a href="#0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kitchen<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a id="nav-cutlery" href="#0">Cutlery</a>
-                  </li>
-                  <li>
-                    <a id="nav-utencils" href="#0">Utencils</a>
-                  </li>
-                </ul>
+    							<li>
+    								<a id="nav-carpentry" href="#0">Cutlery</a>
+    							</li>
+    							<li>
+    								<a id="nav-gardening" href="#0">Utencils</a>
+    							</li>
+    						</ul>
               </li><!-- end dropdown Kitchen -->
 
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Outdoor<strong class="caret"></strong></a>
+                <a href="#0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Outdoor<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-									<li>
-										<a id="nav-carpentry" href="#0">Carpentry</a>
-									</li>
-									<li>
-										<a id="nav-gardening" href="#0">Gardening</a>
-									</li>
+    							<li>
+    								<a id="nav-carpentry" href="#0">Carpentry</a>
+    							</li>
+    							<li>
+    								<a id="nav-gardening" href="#0">Gardening</a>
+    							</li>
                   <li>
                     <a id="nav-mechanic" href="#0">Mechanic</a>
                   </li>
                   <li>
                     <a id="nav-sports-gear" href="#0">Sports Gear</a>
                   </li>
-								</ul>
-							</li><!-- end dropdown Outdoor -->
+    						</ul>
+              </li><!-- end dropdown Outdoor -->
 
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other<strong class="caret"></strong></a>
+                <a href="#0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-									<li>
-										<a id="nav-hygiene" href="#0">Hygiene</a>
-									</li>
-									<li>
-										<a id="nav-components" href="#0">Components</a>
-									</li>
-								</ul>
-							</li><!-- end dropdown Other -->
+                  <li>
+                    <a id="nav-carpentry" href="#0">Hygiene</a>
+                  </li>
+                  <li>
+                    <a id="nav-gardening" href="#0">Components</a>
+                  </li>
+                </ul>
+              </li><!-- end dropdown Other -->
+            </ul><!-- end pull-left -->
 
-            </ul>
             <ul class="nav navbar-nav pull-right">
               <li>
                 <a id="nav-about" href="#0">About</a>
@@ -84,10 +83,10 @@
               <li>
                 <a id="nav-contact" href="#0">Contact</a>
               </li>
-						</ul>
-          </div><!-- end navbar-responsive-collapse -->
-        </div><!-- end navbar -->
-      </div><!-- end navbar-fixed-top -->
+            </ul><!-- end pull-right -->
+          </div><!-- end navbar -->
+        </div><!-- end container-fluid -->
+      </nav><!-- end nav -->
 
       <div id="wrapper-content">
         <div id="about">
@@ -1996,7 +1995,7 @@
           <hr class="buffer"/>
 
           <div class="row" id="secondary">
-            <div class="col-4" id="secondaryLeft">
+            <div class="col-sm-4" id="secondaryLeft">
               <div class="secondary-text">
                 <p>
                   The World Standard
@@ -2004,7 +2003,7 @@
               </div><!-- end secondary -->
             </div><!-- end secondaryLeft -->
 
-            <div class="col-4" id="secondaryMid">
+            <div class="col-sm-4" id="secondaryMid">
               <div class="secondary-text_mid">
                 <p>
                   Ask About our L Codes Recommendations
@@ -2012,7 +2011,7 @@
               </div><!-- end secondary-text_mid -->
             </div><!-- end secondaryMid -->
 
-            <div class="col-4" id="secondaryRight">
+            <div class="col-sm-4" id="secondaryRight">
               <div class="secondary-text">
                 <p>
                   Award Winning Design
