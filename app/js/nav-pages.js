@@ -84,4 +84,11 @@ $(document).ready(function(){
     $(".navbar-toggle").click();
     window.scrollTo( 115, 115);
   });
+
+  $("#home a").click(function(){
+    $("#n-abler").siblings().hide();
+    $("#n-abler").show();
+    $(".navbar-toggle").click();
+    window.scrollTo( 115, 115);
+  })
 });
