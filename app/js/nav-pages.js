@@ -90,5 +90,5 @@ $(document).ready(function(){
     $("#n-abler").show();
     $(".navbar-toggle").click();
     window.scrollTo( 115, 115);
-  })
+  });
 });

@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   $("#footer-carpentry").click(function(){
     $("#carpentry").siblings().hide();
     $("#carpentry").show();
