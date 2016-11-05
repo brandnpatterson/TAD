@@ -58,6 +58,7 @@
     // Set the 'content' div innerHTML based on the fragment identifier.
     getContent(fragmentId, function (content) {
       $('#content').html(content)
+      window.scrollTo( 0, 0)
     })
 
     // Toggle the 'active' class on the link currently navigated to.
