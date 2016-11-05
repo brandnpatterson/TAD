@@ -15,7 +15,7 @@ const reload = sync.reload
 
 gulp.task('build', ['index', 'html', 'pug-pretty', 'lint', 'fonts', 'images'])
 
-gulp.task('clean', del.bind(null, ['*.html', 'app/js/**.min.js', 'app/assets/*.html', 'dist/css/style.min.css', 'dist/fonts/*', 'dist/images/*', 'dist/html/*.', 'dist/js/main.min.js'], {read: false}))
+gulp.task('clean', del.bind(null, ['*.html', 'app/js/**.min.js', 'app/assets/html/*.html', 'dist/css/style.min.css', 'dist/fonts/*', 'dist/images/*', 'dist/html/*.', 'dist/js/main.min.js'], {read: false}))
 
 gulp.task('default', ['clean', 'build', 'pug-pretty', 'lint', 'fonts', 'images', 'watch'], () => {
   gulp.start('serve')
@@ -64,7 +64,7 @@ gulp.task('pug-pretty', () => {
     .pipe(pug({
       pretty: true
     }))
-    .pipe(gulp.dest('app/assets'))
+    .pipe(gulp.dest('app/assets/html'))
 })
 
 gulp.task('scripts', () => {
