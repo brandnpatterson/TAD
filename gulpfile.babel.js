@@ -13,21 +13,29 @@ import       sync from "browser-sync"
 const $ = load()
 const reload = sync.reload
 
-gulp.task('build', ['html', 'pug-pretty', 'lint', 'fonts', 'images'])
+gulp.task('build', ['index', 'html', 'pug-pretty', 'lint', 'fonts', 'images'])
 
-gulp.task('clean', del.bind(null, ['index.html', 'app/js/**.min.js', 'app/index.html', 'dist/css/style.min.css', 'dist/fonts', 'dist/images', 'dist/index.html', 'dist/js/main.min.js'], {read: false}))
+gulp.task('clean', del.bind(null, ['*.html', 'app/js/**.min.js', 'app/assets/*.html', 'dist/css/style.min.css', 'dist/fonts/*', 'dist/images/*', 'dist/html/*.', 'dist/js/main.min.js'], {read: false}))
 
-gulp.task('default', ['clean', 'html', 'pug-pretty', 'lint', 'fonts', 'images', 'watch'], () => {
+gulp.task('default', ['clean', 'build', 'pug-pretty', 'lint', 'fonts', 'images', 'watch'], () => {
   gulp.start('serve')
 })
 
 gulp.task('fonts', () => {
-  gulp.src(['app/fonts/**.eot', 'app/fonts/**.svg','app/fonts/**.ttf', 'app/fonts/**.woff'])
+  gulp.src(['app/assets/fonts/**.eot', 'app/assets/fonts/**.svg','app/assets/fonts/**.ttf', 'app/assets/fonts/**.woff'])
   .pipe(gulp.dest('dist/fonts'))
 })
 
-gulp.task('html', ['scripts', 'styles'], () => {
+gulp.task('html', () => {
   return gulp.src('app/pug/*.pug')
+    .pipe(sourcemaps.init())
+    .pipe(pug())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./dist/html'))
+})
+
+gulp.task('index', ['scripts', 'styles'], () => {
+  return gulp.src('app/pug/index.pug')
     .pipe(sourcemaps.init())
     .pipe(pug())
     .pipe(sourcemaps.write())
@@ -35,7 +43,7 @@ gulp.task('html', ['scripts', 'styles'], () => {
 })
 
 gulp.task('images', () => {
-  return gulp.src('app/images/**/*')
+  return gulp.src('app/assets/images/**/*')
     .pipe($.cache($.imagemin({
       progressive: true,
       interlaced: true,
@@ -56,7 +64,7 @@ gulp.task('pug-pretty', () => {
     .pipe(pug({
       pretty: true
     }))
-    .pipe(gulp.dest('app'))
+    .pipe(gulp.dest('app/assets'))
 })
 
 gulp.task('scripts', () => {
