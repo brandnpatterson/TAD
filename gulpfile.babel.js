@@ -15,14 +15,14 @@ const reload = sync.reload
 
 gulp.task('build', ['index', 'html', 'pug-pretty', 'lint', 'fonts', 'images'])
 
-gulp.task('clean', del.bind(null, ['index.html', 'app/assets/html/*.html', 'dist/css/*', 'dist/fonts/*', 'dist/html/*', 'dist/images/*', 'dist/js/*'], {read: false}))
+gulp.task('clean', del.bind(null, ['index.html', 'app/assets/html/*.html', 'dist/css/style.min.css', 'dist/fonts/*', 'dist/html/*', 'dist/images/*', 'dist/js/main.min.js'], {read: false}))
 
 gulp.task('default', ['build', 'watch'], () => {
   gulp.start('serve')
 })
 
 gulp.task('fonts', () => {
-  gulp.src(['app/assets/fonts/**.eot', 'app/assets/fonts/**.svg','app/assets/fonts/**.ttf', 'app/assets/fonts/**.woff?'])
+  gulp.src(['app/assets/fonts/*.eot', 'app/assets/fonts/*.svg','app/assets/fonts/*.ttf', 'app/assets/fonts/*.woff', 'app/assets/fonts/*.woff2'])
   .pipe(gulp.dest('dist/fonts'))
 })
 
