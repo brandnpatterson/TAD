@@ -17,6 +17,8 @@
   "url": "http://brandnpatterson.com/tad",
   "homepage": "http://brandnpatterson.com/tad",
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^2.2.4"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
