@@ -99,7 +99,7 @@ gulp.task('styles', () => {
 })
 
 gulp.task('watch', () => {
-    gulp.watch('app/pug/*', ['html', 'pug-pretty', reload])
-    gulp.watch('app/css/**/*', ['styles', reload])
-    gulp.watch('app/js/*', ['scripts', reload])
+  gulp.watch('app/pug/*', ['index', 'html', 'pug-pretty', reload])
+  gulp.watch('app/css/**/*', ['styles', reload])
+  gulp.watch('app/js/*', ['scripts', reload])
 })
