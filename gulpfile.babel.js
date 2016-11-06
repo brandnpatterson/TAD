@@ -27,7 +27,7 @@ gulp.task('fonts', () => {
 })
 
 gulp.task('html', () => {
-  return gulp.src('app/pug/*.pug')
+  return gulp.src(['!app/pug/head.pug', 'app/pug/*.pug'])
     .pipe(sourcemaps.init())
     .pipe(pug())
     .pipe(sourcemaps.write())
@@ -60,7 +60,7 @@ gulp.task('lint', () => {
 })
 
 gulp.task('pug-pretty', () => {
-  return gulp.src('app/pug/*.pug')
+  return gulp.src(['!app/pug/head.pug', 'app/pug/*.pug'])
     .pipe(pug({
       pretty: true
     }))
