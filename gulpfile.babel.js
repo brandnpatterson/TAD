@@ -1,29 +1,24 @@
-import       gulp from "gulp"
-import     concat from "gulp-concat"
-import        del from "del"
-import     eslint from "gulp-eslint"
-import       load from "gulp-load-plugins"
-import     prefix from "gulp-autoprefixer"
-import        pug from "gulp-pug"
-import     rename from "gulp-rename"
-import       sass from "gulp-sass"
-import sourcemaps from "gulp-sourcemaps"
-import       sync from "browser-sync"
+import gulp       from 'gulp'
+import concat     from 'gulp-concat'
+import del        from 'del'
+import eslint     from 'gulp-eslint'
+import load       from 'gulp-load-plugins'
+import prefix     from 'gulp-autoprefixer'
+import pug        from 'gulp-pug'
+import rename     from 'gulp-rename'
+import sass       from 'gulp-sass'
+import sourcemaps from 'gulp-sourcemaps'
+import sync       from 'browser-sync'
 
 const $ = load()
 const reload = sync.reload
 
-gulp.task('build', ['index', 'html', 'pug-pretty', 'lint', 'fonts', 'images'])
+gulp.task('build', ['index', 'html', 'pug-pretty', 'lint'])
 
-gulp.task('clean', del.bind(null, ['index.html', 'app/assets/html/*.html', 'dist/css/style.min.css', 'dist/fonts/*', 'dist/html/*', 'dist/images/*', 'dist/js/main.min.js'], {read: false}))
+gulp.task('clean', del.bind(null, ['index.html', 'style.css', 'app/assets/views/*', 'dist/views/*', 'dist/index.min.js'], {read: false}))
 
 gulp.task('default', ['build', 'watch'], () => {
   gulp.start('serve')
-})
-
-gulp.task('fonts', () => {
-  gulp.src(['app/assets/fonts/*.eot', 'app/assets/fonts/*.svg','app/assets/fonts/*.ttf', 'app/assets/fonts/*.woff', 'app/assets/fonts/*.woff2'])
-  .pipe(gulp.dest('dist/fonts'))
 })
 
 gulp.task('html', () => {
@@ -31,7 +26,7 @@ gulp.task('html', () => {
     .pipe(sourcemaps.init())
     .pipe(pug())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./dist/html'))
+    .pipe(gulp.dest('./dist/views'))
 })
 
 gulp.task('index', ['scripts', 'styles'], () => {
@@ -64,7 +59,7 @@ gulp.task('pug-pretty', () => {
     .pipe(pug({
       pretty: true
     }))
-    .pipe(gulp.dest('app/assets/html'))
+    .pipe(gulp.dest('app/assets/views'))
 })
 
 gulp.task('rebuild', ['clean', 'default'])
@@ -72,12 +67,12 @@ gulp.task('rebuild', ['clean', 'default'])
 gulp.task('scripts', () => {
   return gulp.src('app/js/*.js')
     .pipe(sourcemaps.init())
-    .pipe(concat('main.js'))
+    .pipe(concat('index.js'))
     .pipe($.babel())
     .pipe($.uglify())
     .pipe($.rename({suffix: '.min'}))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('dist'))
 })
 
 gulp.task('serve', () => {
@@ -94,10 +89,9 @@ gulp.task('styles', () => {
   gulp.src('app/css/style.scss')
   .pipe(sourcemaps.init())
   .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-  .pipe(rename({suffix: '.min'}))
   .pipe(prefix('last 2 versions'))
   .pipe(sourcemaps.write())
-  .pipe(gulp.dest('dist/css'))
+  .pipe(gulp.dest('./'))
 })
 
 gulp.task('watch', () => {
