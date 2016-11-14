@@ -16,10 +16,7 @@
   "license": "ISC",
   "url": "http://brandnpatterson.com/tad",
   "homepage": "http://brandnpatterson.com/tad",
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.17.0",
     "babel-eslint": "^6.1.2",
