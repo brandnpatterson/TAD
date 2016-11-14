@@ -2,7 +2,7 @@
  * Closes the Navbar when a selection is made
  */
 
- var CloseNavbar = (function(){
+var CloseNavbar = (function(){
 
   // cacheDOM
   var $dropDownMenu = $('.dropdown-menu');
