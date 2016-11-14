@@ -2,7 +2,7 @@ doctype html
 html(lang="en-US")
   include head.pug
   body
-    #navbar-container.container
+    .container
       .navbar.navbar-top
         a(href='#')
           h3.navbar-top_home
@@ -22,18 +22,18 @@ html(lang="en-US")
 
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav.pull-left
-              li
-                a#nav-home(href='#home') Home
-              li
-                a#nav-n-abler(href='#n-abler') N-Abler
+              li.nav-root
+                a(href='#home') Home
+              li.nav-root
+                a(href='#n-abler') N-Abler
               li.dropdown
                 a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Kitchen
                   span.caret
                 ul.dropdown-menu
                   li
-                    a#nav-cutlery(href='#cutlery') Cutlery
+                    a(href='#cutlery') Cutlery
                   li
-                    a#nav-utencils(href='#utencils') Utencils
+                    a(href='#utencils') Utencils
               // end dropdown Kitchen
 
               li.dropdown
@@ -41,13 +41,13 @@ html(lang="en-US")
                   span.caret
                 ul.dropdown-menu
                   li
-                    a#nav-carpentry(href='#carpentry') Carpentry
+                    a(href='#carpentry') Carpentry
                   li
-                    a#nav-gardening(href='#gardening') Gardening
+                    a(href='#gardening') Gardening
                   li
-                    a#nav-mechanic(href='#mechanic') Mechanic
+                    a(href='#mechanic') Mechanic
                   li
-                    a#nav-sports-gear(href='#sports-gear') Sports Gear
+                    a(href='#sports-gear') Sports Gear
               // end dropdown Outdoor
 
               li.dropdown
@@ -55,47 +55,47 @@ html(lang="en-US")
                   span.caret
                 ul.dropdown-menu
                   li
-                    a#nav-hygiene(href='#hygiene') Hygiene
+                    a(href='#hygiene') Hygiene
                   li
-                    a#nav-components(href='#components') Components
+                    a(href='#components') Components
 
             ul.nav.navbar-nav.pull-right
-              li
-                a#nav-about(href='#about') About
-              li
-                a#nav-contact(href='#contact') Contact
-    // end navbar-default
+              li.nav-root
+                a(href='#about') About
+              li.nav-root
+                a(href='#contact') Contact
+    // end nav
 
     #content
 
     footer
       hr.footer-buffer
       .row
-        #footerLeft.col-sm-3
+        .col-sm-3
           .footer-text
             p N-Abler
-            a#footer-n-abler(href='#n-abler') N-Abler II
-            a#footer-n-abler_V(href='#n-abler') Nabler V
+            a(href='#n-abler') N-Abler II
+            a(href='#n-abler') Nabler V
           .hidden-break
-        #footerInLeft.col-sm-3
+        .col-sm-3
           .footer-text
             p Kitchen
-            a#footer-cutlery(href='#cutlery') Cutlery
-            a#footer-utencils(href='#utencils') Utencils
+            a(href='#cutlery') Cutlery
+            a(href='#utencils') Utencils
           .hidden-break
-        #footerInRight.col-sm-3
+        .col-sm-3
           .footer-text
             p Outdoor
-            a#footer-carpentry(href='#carpentry') Carpentry
-            a#footer-gardening(href='#gardening') Gardening
-            a#footer-mechanic(href='#mechanic') Mechanic
-            a#footer-sports-gear(href='#sports-gear') Sports Gear
+            a(href='#carpentry') Carpentry
+            a(href='#gardening') Gardening
+            a(href='#mechanic') Mechanic
+            a(href='#sports-gear') Sports Gear
           .hidden-break
-        #footerRight.col-sm-3
+        .col-sm-3
           .footer-text
             p Other
-            a#footer-hygiene(href='#hygiene') Hygiene
-            a#footer-components(href='#components') Components
+            a(href='#hygiene') Hygiene
+            a(href='#components') Components
       hr.footer-buffer
       a(href='http://brandnpatterson.net/')
         p.copyright
