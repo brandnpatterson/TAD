@@ -8,17 +8,19 @@
   src: url("dist/fonts/Cinzel-Bold-webfont.eot")
   src: url("dist/fonts/Cinzel-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("dist/fonts/Cinzel-Bold-webfont.woff") format("woff"), url("dist/fonts/Cinzel-Bold-webfont.ttf") format("truetype"), url("dist/fonts/Cinzel-Bold-webfont.svg#cinzelregular") format("svg")
 
-body
-  background-color: $primary-bg
-  font-family: $Open-Sans
-  -webkit-font-smoothing: antialiased
-  text-rendering: optimizeLegibility
+html
+  font-family: $stack-primary
 
 a
   cursor: pointer
 
-.hidden, .hidden-break
+.hidden,
+.hidden-break
   display: none
 
 .visible
   display: block
+
+
+.navbar h3
+  font-family: $stack-secondary
