@@ -1,72 +1,16 @@
-
- /*--------------------------*
- //    Panels for Home    //
-/*-------------------------*
-
-//    first-panel    //
-.first-panel,
-.forth-panel
-  font-size: 26px
+.row
+  margin: 0 auto
+  max-width: 1100px
   text-align: center
 
-.first-panel a,
-.third-panel a,
-.forth-panel a
-  display: block
-  text-align: center
+.row-one, .row-three
+  padding: 50px
 
-.first-panel .panel h3,
-.third-panel .panel h3,
-.forth-panel h3
-  font-size: 40px
-  padding-bottom: 15px
-  text-align: center
+.row-two .col-sm-4
+  border-right: 1px gray solid
 
-.first-panel .panel a,
-.third-panel .panel a,
-.forth-panel .panel a
-  padding-top: 10px
+  &:first-child
+    border-left: 1px gray solid
 
-.first-panel .panel img,
-.third-panel .panel img,
-.forth-panel .panel img
-  border-radius: 10px
-  box-shadow-left: none
-  margin: 0 0 40px
-  max-width: 95%
-
-.main-link
-  font-size: 20px
-
-//    second-panel    //
-.second-panel
-  padding-top: 20px
-  &.row
-    text-align: center
-
-.second-panel-left,
-.second-panel-right
-  padding-left: 100px
-  padding-top: 10px
-
-.second-panel-mid,
-.second-panel-right
-  padding-left: 100px
-  height: 50px
-
-.secondary-text
-  font-size: 20px
-  text-align: left
-
-.secondary-text_mid
-  font-size: 20px
-  margin-right: 70px
-  text-align: center
-
-//    third-panel    //
-.third-panel
-  margin-top: 20px
-
-.third-panel p
-  font-size: 30px
-  text-align: center
+.home img
+  max-width: 99%

@@ -10,6 +10,11 @@ body,
 .navbar-header
   background-color: $background
 
+.home, footer
+  a
+    color: blue
+    text-decoration: underline
+
 //    accent    //
 .navbar.navbar-top a h3
   color: $accent
@@ -23,27 +28,25 @@ body,
 
 //    accent-three    //
 footer p,
-.navbar-top
-  color: $accent-three
-
+.navbar-top,
 .secondary-text,
 .secondary-text_mid,
-.third-panel p
+.row-three p
   color: $accent-three
 
-.first-panel,
-.forth-panel
+.row-one,
+.row-four
   &.row
     margin: 0 auto
   p
     color: $accent-three
 
-.gallery .panel img
+.panel img
   box-shadow: 0 0 10px $accent-three
 
 //    accent-four    //
-.second-panel-mid,
-.second-panel-right,
+.row-two-mid,
+.row-two-right,
 .dropdown-menu > li > a:hover
   border-left: $accent-four 1px solid
 
@@ -52,7 +55,7 @@ footer p,
   border-bottom: $accent-four 1px solid
 
 //    box-shadow    //
-.first-panel .panel img,
-.third-panel .panel img,
-.forth-panel .panel img
+.row-one .panel img,
+.row-three .panel img,
+.panel-four .panel img
   box-shadow: 0 0 10px $accent-three
