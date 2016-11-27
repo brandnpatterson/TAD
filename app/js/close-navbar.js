@@ -2,26 +2,37 @@
  * Closes the Navbar when a selection is made
  */
 
-var CloseNavbar = (function(){
+(function() {
 
-  // cacheDOM
-  var $dropDownMenu = $('.dropdown-menu');
-  var $navbarToggle = $('.navbar-toggle');
-  var $navRoot      = $('.nav-root');
+  var CloseNavbar = {
+    init: function() {
+      this.cacheDOM();
+      this.bindEvents();
+    },
 
-  // bind events
-  $navRoot.click(whenDropHidden);
-  $dropDownMenu.click(whenDropVisible);
+    cacheDOM: function() {
+      this.$dropDownMenu = $('.dropdown-menu');
+      this.$navbarToggle = $('.navbar-toggle');
+      this.$navRoot = $('.nav-root');
+    },
 
-  function whenDropHidden() {
-    if ($navbarToggle.is(':visible') && $dropDownMenu.is(':hidden')) {
-      $navbarToggle.trigger('click');
+    bindEvents: function() {
+      this.$navRoot.click(this.whenDropHidden.bind(this));
+      this.$dropDownMenu.click(this.whenDropVisible.bind(this));
+    },
+
+    whenDropHidden: function() {
+      if (this.$navbarToggle.is(':visible') && this.$dropDownMenu.is(':hidden')) {
+        this.$navbarToggle.trigger('click');
+      }
+    },
+
+    whenDropVisible: function() {
+      if (this.$dropDownMenu.is(':visible')) {
+        this.$navbarToggle.trigger('click');
+      }
     }
-  }
+  };
 
-  function whenDropVisible() {
-    if ($dropDownMenu.is(':visible')) {
-      $navbarToggle.trigger('click');
-    }
-  }
+  CloseNavbar.init();
 })();
