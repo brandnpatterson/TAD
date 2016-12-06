@@ -2,9 +2,9 @@
  * Closes the Navbar when a selection is made
  */
 
-(function() {
+(function navBar() {
 
-  var CloseNavbar = {
+  var closeNavbar = {
     init: function() {
       this.cacheDOM();
       this.bindEvents();
@@ -22,6 +22,7 @@
     },
 
     whenDropHidden: function() {
+      console.log('hi');
       if (this.$navbarToggle.is(':visible') && this.$dropDownMenu.is(':hidden')) {
         this.$navbarToggle.trigger('click');
       }
@@ -34,5 +35,5 @@
     }
   };
 
-  CloseNavbar.init();
+  closeNavbar.init();
 })();
