@@ -21,19 +21,19 @@
       this.$dropDownMenu.click(this.whenDropVisible.bind(this));
     },
 
+    // close dropDown when secondary dropDown is hidden
     whenDropHidden: function() {
-      console.log('hi');
       if (this.$navbarToggle.is(':visible') && this.$dropDownMenu.is(':hidden')) {
         this.$navbarToggle.trigger('click');
       }
     },
 
+    // close dropDown when secondary dropDown is visible
     whenDropVisible: function() {
       if (this.$dropDownMenu.is(':visible')) {
         this.$navbarToggle.trigger('click');
       }
     }
   };
-
   closeNavbar.init();
 })();
