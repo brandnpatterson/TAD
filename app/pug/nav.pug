@@ -1,0 +1,62 @@
+.navbar.navbar-top
+  a(href='#')
+    h3.navbar-top_home
+      img.logo(src='dist/images/texas-final.png')
+      | exas Assistive Devices
+// end navbar-top
+
+nav#navbar-default.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar')
+        span.sr.only
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+    // end navbar-header
+
+    #navbar.navbar-collapse.collapse
+      ul.nav.navbar-nav.pull-left
+        li.nav-root
+          a(href='#home') Home
+        li.nav-root
+          a(href='#n-abler') N-Abler
+        li.dropdown
+          a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Kitchen
+            span.caret
+          ul.dropdown-menu
+            li
+              a(href='#cutlery') Cutlery
+            li
+              a(href='#utencils') Utencils
+        // end dropdown Kitchen
+
+        li.dropdown
+          a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Outdoor
+            span.caret
+          ul.dropdown-menu
+            li
+              a(href='#carpentry') Carpentry
+            li
+              a(href='#gardening') Gardening
+            li
+              a(href='#mechanic') Mechanic
+            li
+              a(href='#sports-gear') Sports Gear
+        // end dropdown Outdoor
+
+        li.dropdown
+          a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Other
+            span.caret
+          ul.dropdown-menu
+            li
+              a(href='#hygiene') Hygiene
+            li
+              a(href='#components') Components
+
+      ul.nav.navbar-nav.pull-right
+        li.nav-root
+          a(href='#about') About
+        li.nav-root
+          a(href='#contact') Contact
+// end nav

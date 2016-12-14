@@ -1,106 +1,18 @@
 doctype html
 html(lang="en-US")
+  include vars.pug
   include head.pug
   body
     .container-fluid
-      .navbar.navbar-top
-        a(href='#')
-          h3.navbar-top_home
-            img.logo(src='dist/images/texas-final.png')
-            | exas Assistive Devices
-      // end navbar-top
-
-      nav#navbar-default.navbar.navbar-default
-        .container-fluid
-          .navbar-header
-            button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar')
-              span.sr.only
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-          // end navbar-header
-
-          #navbar.navbar-collapse.collapse
-            ul.nav.navbar-nav.pull-left
-              li.nav-root
-                a(href='#home') Home
-              li.nav-root
-                a(href='#n-abler') N-Abler
-              li.dropdown
-                a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Kitchen
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='#cutlery') Cutlery
-                  li
-                    a(href='#utencils') Utencils
-              // end dropdown Kitchen
-
-              li.dropdown
-                a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Outdoor
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='#carpentry') Carpentry
-                  li
-                    a(href='#gardening') Gardening
-                  li
-                    a(href='#mechanic') Mechanic
-                  li
-                    a(href='#sports-gear') Sports Gear
-              // end dropdown Outdoor
-
-              li.dropdown
-                a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Other
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='#hygiene') Hygiene
-                  li
-                    a(href='#components') Components
-
-            ul.nav.navbar-nav.pull-right
-              li.nav-root
-                a(href='#about') About
-              li.nav-root
-                a(href='#contact') Contact
-    // end nav
+      include nav.pug
 
     .container-fluid
       #content
 
     .container-fluid
-      footer
-        .row
-          .col-sm-3
-            p N-Abler
-            a(href='#n-abler') N-Abler II
-            a(href='#n-abler') Nabler V
-            .hidden-break
-          .col-sm-3
-            p Kitchen
-            a(href='#cutlery') Cutlery
-            a(href='#utencils') Utencils
-            .hidden-break
-          .col-sm-3
-            p Outdoor
-            a(href='#carpentry') Carpentry
-            a(href='#gardening') Gardening
-            a(href='#mechanic') Mechanic
-            a(href='#sports-gear') Sports Gear
-            .hidden-break
-          .col-sm-3
-            p Other
-            a(href='#hygiene') Hygiene
-            a(href='#components') Components
-        a(href='http://brandnpatterson.net/')
-          .copyright
-            | ©
-            script(type='text/javascript') document.write(new Date().getFullYear());
-            | &nbsp; Brandon Patterson. All Rights Reserved.
-      // end footer
+      include footer.pug
 
     script(src='//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
-    script window.jQuery || document.write('<script src="node_modules/jquery/includes/jquery-3.1.1.min.js"><\x3C\/script>')
-    script(src='dist/includes/bootstrap.min.js')
+    script window.jQuery || document.write('<script src="node_modules/jquery/dependencies/jquery-3.1.1.min.js"><\x3C\/script>')
+    script(src='dist/dependencies/bootstrap.min.js')
     script(src='dist/js/index.min.js')
