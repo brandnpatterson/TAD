@@ -2,7 +2,7 @@
  * Inspired By Curran Kelleher October 2014
 **/
 
-!function() {
+(function() {
 
   var partialsCache = {};
 
@@ -29,4 +29,4 @@
   navigate();
 
   $(window).bind('hashchange', navigate);
-}();
+}());

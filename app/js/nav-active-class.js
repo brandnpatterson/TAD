@@ -20,4 +20,4 @@
     }
   };
   activeClass.init();
-})();
+}());
