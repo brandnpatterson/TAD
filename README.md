@@ -1,2 +1,2 @@
-# texas-assistive-devices
-Texas Assistive Devices - Website for an Orthopedic Care Company.
+# Texas Assistive Devices
+Single page app for a small business built with jQuery hash references and Bootstrap.
