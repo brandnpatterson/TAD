@@ -2,9 +2,9 @@
  * Closes the Navbar when a selection is made
  */
 
-(function navBar() {
+(function navClose() {
 
-  var closeNavbar = {
+  var navClose = {
     init: function() {
       this.cacheDOM();
       this.bindEvents();
@@ -35,5 +35,5 @@
       }
     }
   };
-  closeNavbar.init();
+  navClose.init();
 })();

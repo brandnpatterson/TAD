@@ -1,4 +1,4 @@
-(function active() {
+(function activeClass() {
 
   var activeClass = {
     init: function() {
