@@ -3,7 +3,6 @@ module.exports = {
         "browser": true,
         "jquery": true
     },
-    "extends": "eslint:recommended",
     "rules": {
         "indent": [
             "error",

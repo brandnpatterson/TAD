@@ -35,19 +35,6 @@
     }
   }
 
-  // Sets the 'active' class on the active navigation link.
-  function setActiveLink(fragmentId){
-    $('#navbar a').each(function (i, linkElement) {
-      var link = $(linkElement),
-        pageName = link.attr('href').substr(1);
-      if(pageName === fragmentId) {
-        link.attr('class', 'active');
-      } else {
-        link.removeAttr('class');
-      }
-    });
-  }
-
   // Updates dynamic content based on the fragment identifier.
   function navigate(){
 
@@ -60,9 +47,6 @@
       $('#content').html(content);
       window.scrollTo( 0, 0);
     });
-
-    // Toggle the 'active' class on the link currently navigated to.
-    setActiveLink(fragmentId);
   }
 
   // If no fragment identifier is provided,
