@@ -5,17 +5,20 @@
 (function navClose() {
 
   var navClose = {
+    // Invoke to use this object
     init: function() {
       this.cacheDOM();
       this.bindEvents();
     },
 
+    // cacheDOM
     cacheDOM: function() {
       this.$dropDownMenu = $('.dropdown-menu');
       this.$navbarToggle = $('.navbar-toggle');
       this.$navRoot = $('.nav-root');
     },
 
+    // Events bind(this)
     bindEvents: function() {
       this.$navRoot.click(this.whenDropHidden.bind(this));
       this.$dropDownMenu.click(this.whenDropVisible.bind(this));
@@ -35,5 +38,6 @@
       }
     }
   };
+  // Invoke init function from navClose
   navClose.init();
 }());
