@@ -13,7 +13,7 @@ import sync       from 'browser-sync';
 var $ = load();
 var reload = sync.reload;
 
-gulp.task('clean', del.bind(null, ['index.html', 'dist/css', 'dist/views/*', 'dist/js'], {read: false}));
+gulp.task('clean', del.bind(null, ['index.html', 'dist/css', 'dist/routes/*', 'dist/js'], {read: false}));
 
 gulp.task('default', ['html', 'styles', 'scripts', 'lint' ], () => {
   gulp.start('serve')
@@ -22,7 +22,7 @@ gulp.task('default', ['html', 'styles', 'scripts', 'lint' ], () => {
   gulp.watch('app/js/*', ['scripts', reload]);
 });
 
-gulp.task('html', ['html:views'], () => {
+gulp.task('html', ['html:routes'], () => {
   return gulp.src('app/pug/index.pug')
     .pipe(sourcemaps.init())
     .pipe(pug())
@@ -30,12 +30,12 @@ gulp.task('html', ['html:views'], () => {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('html:views', () => {
+gulp.task('html:routes', () => {
   return gulp.src(['!app/pug/head.pug', '!app/pug/index.pug', 'app/pug/*.pug'])
     .pipe(sourcemaps.init())
     .pipe(pug())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./dist/views'));
+    .pipe(gulp.dest('./dist/routes'));
 });
 
 gulp.task('images', () => {
