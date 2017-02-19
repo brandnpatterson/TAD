@@ -18,9 +18,9 @@
     },
 
     // Remove active class and give to parent
-    addActiveClass: function() {
+    addActiveClass: function(e) {
       $('.nav').find('.active').removeClass('active');
-      $(this).parent().addClass('active');
+      $(e.target).parent().addClass('active');
     }
   };
 
